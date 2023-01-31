@@ -1,0 +1,205 @@
+@font-face{
+  font-family: Kanit-Bold;
+  src: url(../fonts/Kanit-Bold.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+@font-face{
+  font-family: Kanit-Light;
+  src: url(../fonts/Kanit-Light.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+@font-face{
+  font-family: Kanit-Medium;
+  src: url(../fonts/Kanit-Medium.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+@font-face{
+  font-family: Kanit-Regular;
+  src: url(../fonts/Kanit-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+@font-face{
+  font-family: Kanit-SemiBold;
+  src: url(../fonts/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+a:hover{
+  text-decoration: none;
+}   
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  .mb-x{
+    display: none !important;
+  }  
+}
+@media only screen and (min-width: 1025px) { /* PC */
+  .pc-x{
+    display: none !important;
+  }  
+}  
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1640px !important;
+  }
+}
+header nav{ 
+  background-color: #F9FBFC;
+  height: 90px;
+} 
+header .navbar-brand img{
+  height: 55px;
+}
+header .navbar-nav > .nav-item{ 
+  height: 90px;
+  line-height: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+header .navbar-nav .nav-item.active{
+  border-bottom: 3px solid #E2863C; 
+}
+header .navbar-nav .nav-item .nav-link{
+  color: #58595A;
+  font-family: Kanit-Medium;
+  font-size: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-transform: uppercase;
+}
+header .navbar-nav .nav-item:hover .nav-link{
+  color: #E16D22;
+}
+header .navbar-nav .nav-item .nav-link.dropdown-toggle::after{
+  content: unset !important;
+}
+header .navbar-nav .nav-item .nav-link.dropdown-toggle:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background: url(../images/ionic-ios-arrow-dropdown-circle.png);
+  background-position: center !important;
+  background-size: 14px auto !important;
+  background-repeat: no-repeat !important; 
+  top: 36px;
+  right: -20px;
+}
+header .navbar-nav .nav-item:hover .nav-link.dropdown-toggle:before{
+  transform: rotate(180deg);
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu li a{
+  height: 60px !important; 
+} 
+header .navbar-nav .nav-item.dropdown .dropdown-menu li{
+  border: 1px solid #E2E2E2;
+} 
+header .navbar-nav .nav-item.dropdown .dropdown-menu{ 
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+  margin-top: -1px;
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu a{ 
+  color: #58595A;
+  font-family: Kanit-Medium;
+  font-size: 20px;
+  line-height: 50px;
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu a:hover{ 
+  color: #E16D22; 
+}
+header .navbar-nav .btn-login{
+  font-family: Kanit-Medium;
+  font-size: 17px;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  height: 30px;
+  color: #fff;
+  min-width: 73px;
+  line-height: 18px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+header .navbar-nav .icon-cart{
+  position: relative;
+}
+header .navbar-nav .icon-cart img{
+  height: 18px;
+}
+header .navbar-nav .icon-cart p{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  height: 18px;
+  width: 18px; 
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  border-radius: 100%;
+  font-family: Kanit-Medium;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+}
+header .navbar-nav .nav-item.lang .nav-link.dropdown-toggle:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 5px;
+  width: 12px;
+  border-radius: 100%;
+  background: url(../images/ionic-ios-arrow-down-mi.png);
+  background-position: center !important;
+  background-size: 11px 5px !important;
+  background-repeat: no-repeat !important; 
+  top: 40px;
+  right: -20px;
+}
+header .navbar-nav .nav-item.lang:hover .nav-link.dropdown-toggle:before{
+  transform: rotate(180deg);
+}
+.home-sec1{
+  min-height: calc(100vh - 90px);
+  background: url(../images/bg-orange.png) ,  url(../images/car-img.png),  #fff   !important;
+  background-position: right bottom , left bottom , center !important;
+  background-size: auto 100%, auto 664px ,  100% !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important;  
+}
+.search-home{
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-home h1{
+  font-family: Kanit-Medium;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #E2863C;
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+}
+.custom-control-label{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+}
+.custom-control {
+  margin-bottom: 15px;
+}
+
+
+/* 
+  font-family: Kanit-Regular;
+  font-family: Kanit-Medium; 
+*/
