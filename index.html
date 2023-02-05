@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
- 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" />
+	
 	
 </head>
 <body>
  
 
-	<header> 
+	<header class="fixed-top"> 
 		<nav class="navbar navbar-expand-xl">
 			<div class="container">
 				<div class="d-flex flex-grow-1"> 
@@ -36,31 +37,31 @@
 								Products
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDrop">
-								<li><a class="dropdown-item" href="#">TIRES</a></li>
-								<li><a class="dropdown-item" href="#">WHEELS</a></li>
-								<li><a class="dropdown-item" href="#">OTHER PRODUCTS</a></li>
+								<li><a class="dropdown-item" href="product.html">TIRES</a></li>
+								<li><a class="dropdown-item" href="product.html">WHEELS</a></li>
+								<li><a class="dropdown-item" href="product.html">OTHER PRODUCTS</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">SERVICES</a>
+							<a href="service.html" class="nav-link">SERVICES</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="nav-link">PROMOTIONS</a>
+							<a href="promotion.html" class="nav-link">PROMOTIONS</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="nav-link">TIPS</a>
+							<a href="tips.html" class="nav-link">TIPS</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="nav-link">About us</a>
+							<a href="about-us.html" class="nav-link">About us</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
+							<a href="contact.html" class="nav-link">Contact</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="btn btn-login">LOgin</a>
+							<a href="#" class="btn btn-login" data-toggle="modal" data-target="#modalLogin">Login</a>
 						</li> 
 						<li class="nav-item">
-							<a href="#" class="icon-cart">
+							<a href="order-list.html" class="icon-cart">
 								<img src="images/icon-cart.png" alt="icon-cart">
 								<p>1</p>
 							</a>
@@ -104,47 +105,222 @@
 									</div>
 									<div class="form-group"> 
 										<select class="selectpicker w-100" title="ความสูงของแก้มยาง" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0" >เลือกปี</option>
-											<option value="1" selected>2566</option>
-											<option value="2">2565</option>
-											<option value="3">2564</option> 
-											<option value="4">2563</option> 
-											<option value="5">2562</option> 
+											<option value="0">ทั้งหมด</option>
+											<option value="1">250</option>
+											<option value="2">1100</option>
+											<option value="3">100</option> 
+											<option value="4">225</option>  
 										</select> 
 									</div>
 									<div class="form-group"> 
-                                                <select class="selectpicker w-100" title="ความกว้างของหน้ายาง" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0" >เลือกปี</option>
-											<option value="1" selected>2566</option>
-											<option value="2">2565</option>
-											<option value="3">2564</option> 
-											<option value="4">2563</option> 
-											<option value="5">2562</option> 
+										<select class="selectpicker w-100" title="ความกว้างของหน้ายาง" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+											<option value="0">ทั้งหมด</option>
+											<option value="1">10</option>
+											<option value="2">11</option>
+											<option value="3">12</option>  
 										</select> 
 									</div>
 									<div class="form-group"> 
-                                                <select class="selectpicker w-100" title="ขนาดของขอบล้อ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0" >เลือกปี</option>
-											<option value="1" selected>2566</option>
-											<option value="2">2565</option>
-											<option value="3">2564</option> 
-											<option value="4">2563</option> 
-											<option value="5">2562</option> 
+										<select class="selectpicker w-100" title="ขนาดของขอบล้อ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+											<option value="0">ทั้งหมด</option>
+											<option value="1">10</option>
+											<option value="2">11</option>
+											<option value="3">12</option> 
+											<option value="4">13</option> 
+											<option value="5">14</option> 
 										</select>
+									</div>
+									<div class="form-group "> 
+										<div class="row">
+											<div class="col-6 text-left">
+												<button type="button" class="btn btn-search">ค้นหา</button>
+											</div>
+											<div class="col-6 text-right">
+												<a href="#" class="link">เรียนรู้วิธีดูขนาดยาง</a>
+											</div>
+										</div>
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-5">
-
+						<div id="slide1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#slide1" data-slide-to="0" class="active"></li>
+								<li data-target="#slide1" data-slide-to="1"></li>
+								<li data-target="#slide1" data-slide-to="2"></li>
+							</ul>
+							<!-- The slideshow -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/img-promotion.png" alt="promotion"  >
+								</div> 
+								<div class="carousel-item">
+									<img src="images/img-promotion.png" alt="promotion"  >
+								</div> 
+								<div class="carousel-item">
+									<img src="images/img-promotion.png" alt="promotion"  >
+								</div> 
+							</div>
+							<!-- Left and right controls -->
+							<a class="carousel-control-prev" href="#slide1" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#slide1" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="home-service">
+			<div class="container">
+				<div class="main">
+					<h1 class="h1-botb">Service</h1>
+					<div class="row">
+						<div class="col-xl-2">
+							<a href="#"> 
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon1.png" alt="ยางรถยนต์">
+										<h4>ยางรถยนต์</h4>
+									</div>
+								</div>
+							</a>
+						</div> 
+						<div class="col-xl-2">
+							<div class="btn-service">
+								<div> 
+									<img src="images/sicon2.png" alt="น้ำมันเครื่อง">
+									<h4>น้ำมันเครื่อง</h4>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xl-2">
+							<div class="btn-service">
+								<div> 
+									<img src="images/sicon3.png" alt="แบตเตอรี่">
+									<h4>แบตเตอรี่</h4>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xl-2">
+							<div class="btn-service">
+								<div> 
+									<img src="images/sicon4.png" alt="โช้คอัพ, ระบบช่วงล่าง">
+									<h4>โช้คอัพ, ระบบช่วงล่าง</h4>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xl-2">
+							<div class="btn-service">
+								<div> 
+									<img src="images/sicon5.png" alt="ระบบเบรก">
+									<h4>ระบบเบรก</h4>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xl-2">
+							<div class="btn-service">
+								<div> 
+									<img src="images/sicon6.png" alt="ตั้งศูนย์">
+									<h4>ตั้งศูนย์</h4>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xl-12 text-center">
+							<a href="#" class="btn btn-master">บริการทั้งหมด</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="home-tips">
+			<div class="container">
+				<h1 class="h1-botb">tips</h1>
+				<ul id="tips">
+					<li>
+						<div class="tips-box">
+							<img src="images/t1.png" class="img" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
+							<h6>22 • 10 • 2527</h6>
+							<h4>ลมธรรมดากับลมไนโตรเจน <br>
+								เติมผสมกันได้</h4> 
+							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
+
+						</div>
+					</li>
+					<li>
+						<div class="tips-box">
+							<img src="images/t2.png" class="img" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
+							<h6>22 • 10 • 2527</h6>
+							<h4>เช็ครถรับหน้าฝน ขับขี่หน้าฝนให้ปลอดภัย <br>
+								ด้วยรักและห่วงใยจากติวานนท์การยาง</h4>
+							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
+
+						</div>
+					</li>
+					<li>
+						<div class="tips-box">
+							<img src="images/t3.png" class="img" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
+							<h6>22 • 10 • 2527</h6>
+							<h4>หมดปัญหากลิ่นอับกวนใจในรถ ฤดูฝนที่ไร <br>
+								ปัญหากลิ่นอัพในรถมากวนใจทุกที</h4>
+							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
+
+						</div>
+					</li>
+					<li>
+						<div class="tips-box">
+							<img src="images/t2.png" class="img" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
+							<h6>22 • 10 • 2527</h6>
+							<h4>เช็ครถรับหน้าฝน ขับขี่หน้าฝนให้ปลอดภัย <br>
+								ด้วยรักและห่วงใยจากติวานนท์การยาง</h4>
+							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
+
+						</div>
+					</li>
+					<li>
+						<div class="tips-box">
+							<img src="images/t1.png" class="img" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
+							<h6>22 • 10 • 2527</h6>
+							<h4>ลมธรรมดากับลมไนโตรเจน <br>
+								เติมผสมกันได้</h4> 
+							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
+
+						</div>
+					</li>
+				</ul>
+				<br>
+				<div class="col-xl-12 text-center">
+					<a href="#" class="btn btn-master">ดูทั้งหมด</a>
+				</div>
+			</div>
+ 
+		</section>
+		<section class="home-logo">
+			<div class="container">
+				<ul id="home-logo">
+					<li><img src="images/l1.png" alt=""></li>
+					<li><img src="images/l2.png" alt=""></li>
+					<li><img src="images/l3.png" alt=""></li>
+					<li><img src="images/l4.png" alt=""></li>
+					<li><img src="images/l5.png" alt=""></li>
+					<li><img src="images/l6.png" alt=""></li>
+					<li><img src="images/l7.png" alt=""></li>
+				</ul>
+			</div>
+		</section>
 	</main>
 	<footer> 
-		
+		<div class="top">
+
+		</div>
+		<div class="bot">
+
+		</div>
 	</footer>
 
 
@@ -155,6 +331,95 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+
+	<script>
+		$(document).ready(function() { 
+
+			$('#tips').lightSlider({
+				item:3,
+				loop:false,
+				slideMove:1,
+				easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+				speed:600,
+				responsive : [
+					{
+						breakpoint:1900,
+						settings: {
+							item:3,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:1200,
+						settings: {
+							item:3,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:800,
+						settings: {
+							item:2,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:480,
+						settings: {
+							item:1,
+							slideMove:1
+						}
+					}
+				]
+			});  
+			$('#home-logo').lightSlider({
+				item:7,
+				loop:false,
+				slideMove:1,
+				easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+				speed:600,
+				responsive : [
+					{
+						breakpoint:1900,
+						settings: {
+							item:7,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:1200,
+						settings: {
+							item:5,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:800,
+						settings: {
+							item:3,
+							slideMove:1,
+							slideMargin:6,
+						}
+					}, 
+					{
+						breakpoint:480,
+						settings: {
+							item:3,
+							slideMove:1
+						}
+					}
+				]
+			});  
+		});
+
+		 
+	</script>
  
  
 </body>
