@@ -17,7 +17,76 @@
 	
 </head>
 <body>
- 
+	<div class="menu-mb pc-x  ">
+		<a class="navbar-brand" href="#">
+			<img src="images/LOGO2.png" alt="logo">   
+		</a>  
+		<a class="navbar-close" href="#">
+			<img src="images/icon-close.png" alt="close">   
+		</a>  
+
+		<div class="dropdown lang">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDrop" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+				EN
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDrop">
+				<li><a class="dropdown-item" href="#">EN</a></li>
+				<li><a class="dropdown-item" href="#">TH</a></li>
+				<li><a class="dropdown-item" href="#">CN</a></li>
+			</ul>
+		</div>
+
+		<ul class="navbar-nav"> 
+			<li>
+				<a href="index.html">Home</a>
+			</li>  
+			<li class="dropdown">
+				<span class="mb-0">Products</span>
+				<ul>
+					<li><a class="dropdown-item" href="product.html">TIRES</a></li>
+					<li><a class="dropdown-item" href="product.html">WHEELS</a></li>
+					<li><a class="dropdown-item" href="product.html">OTHER PRODUCTS</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="service.html">SERVICES</a>
+			</li> 
+			<li>
+				<a href="promotion.html">PROMOTIONS</a>
+			</li> 
+			<li>
+				<a href="tips.html">TIPS</a>
+			</li> 
+			<li>
+				<a href="about-us.html">About us</a>
+			</li> 
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>   
+		</ul>
+		<br>
+		<div class="d-flex justify-content-around justify-content-center">
+			<a href="#" class="social"><img src="images/Icon-awesome-facebook-f.png" alt=""></a>
+			<a href="#" class="social"><img src="images/Icon-simple-line.png" alt=""></a>
+			<a href="#" class="social"><img src="images/Icon-awesome-instagram.png" alt=""></a>
+
+		</div>
+	</div>
+	<div class="menu-footer pc-x">
+		<a href="#">
+			<img src="images/ft1.png" alt="">
+		</a>
+		<a href="#">
+			<img src="images/ft2.png" alt="">
+			<p>11</p>
+		</a>
+		<a href="#">
+			<img src="images/ft3.png" alt="">
+		</a>
+		<a href="#">
+			<img src="images/ft4.png" alt="">
+		</a>
+	</div>
 
 	<header class="fixed-top"> 
 		<nav class="navbar navbar-expand-xl">
@@ -26,6 +95,21 @@
 					<a class="navbar-brand" href="#">
 						<img src="images/LOGO.png" alt="logo">   
 					</a>  
+					<button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+						<img src="images/icon-nav.png" alt="">
+					</button>
+
+					<div class="dropdown lang">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDrop" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+							EN
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDrop">
+							<li><a class="dropdown-item" href="#">EN</a></li>
+							<li><a class="dropdown-item" href="#">TH</a></li>
+							<li><a class="dropdown-item" href="#">CN</a></li>
+						</ul>
+					</div>
+					
 				</div>
 				<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
 					<ul class="navbar-nav ml-auto flex-nowrap"> 
@@ -180,8 +264,8 @@
 			<div class="container">
 				<div class="main">
 					<h1 class="h1-botb">Service</h1>
-					<div class="row">
-						<div class="col-xl-2">
+					<div class="row row-set">
+						<div class="col-2">
 							<a href="#"> 
 								<div class="btn-service">
 									<div> 
@@ -191,46 +275,58 @@
 								</div>
 							</a>
 						</div> 
-						<div class="col-xl-2">
-							<div class="btn-service">
-								<div> 
-									<img src="images/sicon2.png" alt="น้ำมันเครื่อง">
-									<h4>น้ำมันเครื่อง</h4>
+						<div class="col-2">
+							<a href="#"> 
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon2.png" alt="น้ำมันเครื่อง">
+										<h4>น้ำมันเครื่อง</h4>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div> 
-						<div class="col-xl-2">
-							<div class="btn-service">
-								<div> 
-									<img src="images/sicon3.png" alt="แบตเตอรี่">
-									<h4>แบตเตอรี่</h4>
+						<div class="col-2">
+							<a href="#"> 
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon3.png" alt="แบตเตอรี่">
+										<h4>แบตเตอรี่</h4>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div> 
-						<div class="col-xl-2">
-							<div class="btn-service">
-								<div> 
-									<img src="images/sicon4.png" alt="โช้คอัพ, ระบบช่วงล่าง">
-									<h4>โช้คอัพ, ระบบช่วงล่าง</h4>
+						<div class="col-2">
+							<a href="#">
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon4.png" alt="โช้คอัพ, ระบบช่วงล่าง">
+										<h4>โช้คอัพ, ระบบช่วงล่าง</h4>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div> 
-						<div class="col-xl-2">
-							<div class="btn-service">
-								<div> 
-									<img src="images/sicon5.png" alt="ระบบเบรก">
-									<h4>ระบบเบรก</h4>
+						<div class="col-2">
+							<a href="#"> 
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon5.png" alt="ระบบเบรก">
+										<h4>ระบบเบรก</h4>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div> 
-						<div class="col-xl-2">
-							<div class="btn-service">
-								<div> 
-									<img src="images/sicon6.png" alt="ตั้งศูนย์">
-									<h4>ตั้งศูนย์</h4>
+						<div class="col-2">
+							<a href="#"> 
+								<div class="btn-service">
+									<div> 
+										<img src="images/sicon6.png" alt="ตั้งศูนย์">
+										<h4>ตั้งศูนย์</h4>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div> 
+					</div>
+					<div class="row"> 
 						<div class="col-xl-12 text-center">
 							<a href="#" class="btn btn-master">บริการทั้งหมด</a>
 						</div>
@@ -316,10 +412,104 @@
 	</main>
 	<footer> 
 		<div class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4">
+						<address>
+							<img src="images/ionic-ios-pin.png" alt="">
+							<span>บริษัท ติวานนท์ยางยนต์ จำกัด</span> <br>
+							เลขที่ 87-113 ถ.ติวานนท์ <br>
+							ต.ตลาดขวัญ อ.เมือง จ.นนทบุรี 11000
+						</address>
 
+						<address>
+							<img src="images/ionic-md-time.png" alt="">
+							<span>เวลาให้บริการ (ทุกสาขา)</span> <br>
+						วันจันทร์ - วันเสาร์ เวลา 08.00-18.30 น. <br>
+						วันอาทิตย์ (เปิดเฉพาะสัปดาห์ที่ 1 และ 2 ของเดือน) <br>
+						เวลา 09.00-15.00 น.
+						</address>
+					</div>
+					<div class="col-xl-8">
+						<div class="row">
+							<div class="col-xl-4"> 
+								<ul class="hide">
+									<li>
+										Main Menu
+									</li>
+									<li class="active">
+										<a href="index.html">Home</a>
+									</li>
+									<li>
+										<a href="promotion.html">Promotion</a>
+									</li>
+									<li>
+										<a href="tips.html">Tips</a>
+									</li>
+									<li>
+										<a href="about-us.html">About</a>
+									</li>
+									<li>
+										<a href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xl-4">
+								<ul class="hide"> 
+									<li>
+										Products
+									</li>
+									<li>
+										<a href="#">Wheels</a>
+									</li>
+									<li>
+										<a href="#">Tires</a>
+									</li>
+									<li>
+										<a href="#">Other Products</a>
+									</li> 
+								</ul>
+							</div>
+							<div class="col-xl-4">
+								<ul class="hide">
+									<li>
+										Service
+									</li>
+									<li>
+										<a href="#">ยางรถยนต์</a>
+									</li>
+									<li>
+										<a href="#">น้ำมันเครื่อง</a>
+									</li>
+									<li>
+										<a href="#">ระบบเบรก</a>
+									</li>
+									<li>
+										<a href="#">โช้คอัพ, ระบบช่วงล่าง</a>
+									</li>
+									<li>
+										<a href="#">แบตเตอรี่</a>
+									</li>
+									<li>
+										<a href="#">ตั้งศูนย์</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="bot">
-
+			<div class="container pt-3">
+				<div class="d-flex align-content-center justify-content-center">
+					<h1>ติดต่อเรา: <span>02-525-0803</span></h1> 
+					<a href="#" class="social"><img src="images/Icon-awesome-facebook-f.png" alt=""></a>
+					<a href="#" class="social"><img src="images/Icon-simple-line.png" alt=""></a>
+					<a href="#" class="social"><img src="images/Icon-awesome-instagram.png" alt=""></a>
+				</div>
+				<h6 class="text-center">© Tivanon Yangyon 2022</h6>
+			</div>
 		</div>
 	</footer>
 
@@ -334,6 +524,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
 
 	<script>
+
+
 		$(document).ready(function() { 
 
 			$('#tips').lightSlider({
@@ -410,13 +602,32 @@
 					{
 						breakpoint:480,
 						settings: {
-							item:3,
+							item:2.5,
 							slideMove:1
 						}
 					}
 				]
 			});  
 		});
+		
+ 
+
+		$('.btn-menu').click(function(){    
+			$(".menu-mb").addClass("active" , 300);  
+		});
+		$('.navbar-close').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
+		});
+		$('.menu-mb .navbar-nav .dropdown').click(function(){    
+			$(this).toggleClass("active");  
+		});
+		$('footer .top .col-xl-4 ul').click(function(){     
+			$("footer .top .col-xl-4 ul").removeClass("show");   
+			$("footer .top .col-xl-4 ul").addClass("hide");   
+			$(this).toggleClass("hide show");   
+		});
+
+
 
 		 
 	</script>

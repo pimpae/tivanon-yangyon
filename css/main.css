@@ -144,10 +144,11 @@ header .navbar-nav .icon-cart{
 }
 header .navbar-nav .icon-cart img{
   height: 18px;
+  margin-top: 10px;
 }
 header .navbar-nav .icon-cart p{
   position: absolute;
-  top: -10px;
+  top: -2px;
   right: -10px;
   height: 18px;
   width: 18px; 
@@ -515,6 +516,466 @@ footer .bot{
   margin: auto;
   object-fit: cover;
 }
+footer address{
+  font-family: Kanit-Light; 
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+}
+footer address span{
+  font-family: Kanit-Medium;  
+}
+footer address img{
+  position: absolute;  
+  left: 0;
+  top: 5px; 
+}
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+footer ul li {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Kanit-Light;
+}
+footer ul li a{
+  color: #fff;
+  font-size: 20px;
+  font-family: Kanit-Light;
+  transition: .33s all ease-out; 
+}
+footer ul li:hover a{
+  color: rgba(255, 255, 255, 0.5);
+}
+footer ul li.active a{
+  color: rgba(255, 255, 255, 0.5);
+}
+footer h1{
+  color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+  font-family: Kanit-Regular;
+  padding-right: 50px; 
+  line-height: 55px;
+  position: relative;
+}
+footer h1:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  width: 1px;
+  background-color: #fff;
+}
+footer h1 span{ 
+  font-size: 35px; 
+}
+footer .social{ 
+  font-size: 35px; 
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: .33s all ease-out; 
+}
+footer .social img{ 
+  height: 30px;
+  transition: .33s all ease-out; 
+} 
+footer .social:hover img{ 
+  transform: scale(.7);
+  opacity: .75;
+}
+footer h6{
+  color: rgba(255, 255, 255, .5);
+  font-size: 16px;
+  font-family: Kanit-Light; 
+}
+@media only screen and (max-width: 1024px) { /* MOBILE */ 
+  header nav{ 
+    background-color: #F9FBFC;
+    height: 80px;
+    padding: 20px !important;
+  } 
+  header .navbar-brand img{
+    height: 35px;
+  }
+  header .navbar .navbar-toggler{
+    float: right;
+    position: absolute;
+    right: 20px;
+  } 
+  header .dropdown-toggle::after{
+    content: unset !important;
+  }
+  header .dropdown-toggle:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 5px;
+    width: 12px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-down-mi.png);
+    background-position: center !important;
+    background-size: 11px 5px !important;
+    background-repeat: no-repeat !important; 
+    top: 22px;
+    right: -5px;
+  } 
+  header .show .dropdown-toggle:before{
+    transform: rotate(180deg);
+  }
+  header button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header .lang{
+    float: right;
+    position: absolute;
+    right: 90px;  
+  }
+  header .lang > a{ 
+    font-family: Kanit-Medium; 
+    color: #58595A;
+    font-size: 20px;
+  } 
+  .menu-mb{ 
+    z-index: 2222 !important;
+    position: fixed;
+    left: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/mbg.png) , linear-gradient(to bottom, #58595a, #454647, #343434, #232323, #121212);
+    background-repeat: no-repeat , no-repeat !important;
+    background-size: 285px auto , 100% !important ;
+    background-position: bottom 25px right 25px , center;
+    padding: 25px;
+  }
+  .menu-mb.active{
+    display: block; 
+    left: 0;
+  }
+  .menu-mb .navbar-close{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .menu-mb .lang{
+    position: absolute;
+    right: 70px;
+    top: 20px; 
+  } 
+  .menu-mb .lang > a{ 
+    font-family: Kanit-Medium; 
+    color: #fff;
+    font-size: 20px;
+  } 
+  .menu-mb .navbar-nav{
+    margin-top: 50px;
+  }
+  .menu-mb .navbar-nav { 
+    text-align: center; 
+  }
+  .menu-mb .navbar-nav a{
+    font-family: Kanit-Medium; 
+    color: #fff;
+    text-align: center;
+    font-size: 22px; 
+    text-transform: uppercase;
+  }
+  .menu-mb .navbar-nav li{
+    font-family: Kanit-Medium; 
+    color: #fff;
+    text-align: center;
+    font-size: 22px; 
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .menu-mb .navbar-nav li ul{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .menu-mb .navbar-nav li ul li a{
+    font-family: Kanit-Regular;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .menu-mb .navbar-nav .dropdown ul{
+    display: none;
+  }
+  .menu-mb .navbar-nav .dropdown.active ul{
+    display: block;
+  } 
+  .menu-mb .navbar-nav .dropdown span{
+    position: relative;
+  }
+  .menu-mb .navbar-nav .dropdown span::after{
+    content: unset !important;
+  }
+  .menu-mb .navbar-nav .dropdown span:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png);
+    background-position: center !important;
+    background-size: 14px auto !important;
+    background-repeat: no-repeat !important; 
+    top: 10px; 
+    right: -30px;
+  }
+  .menu-mb .navbar-nav .dropdown.active span:before{
+    transform: rotate(180deg);
+  } 
+  .menu-footer{
+    z-index: 1000 !important;
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background:  linear-gradient(to bottom, #58595a, #454647, #343434, #232323, #121212); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu-footer > a{
+    position: relative;
+  }
+  .menu-footer > a > img{
+    height: 26px;
+  }
+  .menu-footer p{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    height: 18px;
+    width: 18px; 
+    background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+    border-radius: 100%;
+    font-family: Kanit-Medium;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 18px;
+  }
+  .home-sec1 {
+    min-height: unset !important;
+  }
+  .home-sec1 .container .row > div.col-xl-7:nth-child(1){
+    order: 2; 
+    background: url(../images/car-img.png),  #fff   !important;
+    background-position:   center bottom  , center !important;
+    background-size:   100% auto ,  100% !important;
+    background-repeat:  no-repeat , no-repeat !important;    
+  }
+  .home-sec1 .container .row > div.col-xl-5:nth-child(2){
+    order: 1;
+    height: 480px;
+    background-image: linear-gradient(to bottom, #e2863c, #e07737, #de6834, #db5732, #d74532) !important;
+  }
+  .home-sec1 .container .row > div:nth-child(2) .carousel{ 
+  } 
+  #slide1 .carousel-inner .carousel-item img {
+    height: 380px;
+  }
+  #slide1 {
+    margin-top: 25px;
+  } 
+  .search-home{
+    padding-top: 30px; 
+    height: unset !important;
+    padding-bottom: 150px;
+  }
+  .search-home h1 { 
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .custom-control-label { 
+    font-size: 18px; 
+  }
+  .home-service{ 
+    background:  url(../images/img-bg-overlay.png);
+    background-position:   center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: unset !important;
+  }  
+  .home-service:after{  
+    height: 130px;   
+  } 
+  .home-service::before{  
+    height: 130px;    
+    bottom: -70px;
+  } 
+  .h1-botb{
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .h1-botb:after { 
+    margin-top: -5px; 
+  }
+  .btn-service { 
+    width: 120px;
+    height: 220px; 
+    padding-bottom: 30px; 
+    margin-bottom: 20px;
+  }
+  .home-service .row-set{ 
+    flex-wrap: nowrap;
+    overflow-x: auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+  .home-service .row-set > div{ 
+    width: 170px;
+    max-width: unset !important;
+  }
+  .btn-service img {
+    height: 65px; 
+  }
+  .btn-service h4 { 
+    font-size: 14px; 
+  }
+  .btn-service img { 
+    margin-top: -60px; 
+  } 
+  .btn-service:hover img{  
+    margin-top: -75px;
+  }
+  .home-tips .tips-box .img { 
+    height: 350px; 
+  }
+  .home-tips .tips-box { 
+    text-align: center;
+  }
+  .home-tips .tips-box h6 {
+    margin-top: 15px; 
+    text-align: center;
+  }
+  .home-tips .tips-box h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .home-tips .tips-box a {
+    font-size: 20px; 
+  }
+  .home-tips .lSAction {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+  } 
+  .home-tips .lSAction .lSPrev{ 
+    left: 5%; 
+  }
+  .home-tips .lSAction .lSNext{ 
+    right: 0%; 
+  }
+  .btn-master {
+    padding: 10px 30px; 
+    font-size: 18px; 
+  }
+  .home-tips { 
+    padding-bottom: 40px;
+  }
+  .home-logo img { 
+    max-height: 20px;
+    width: 100%;
+  }
+  .home-logo {
+    padding-top: 45px;
+    padding-bottom: 45px; 
+  } 
+  .home-logo  .lSPager {
+    display: none !important;
+  }
+  footer .top {
+    background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  footer address {
+    text-align: center;
+  } 
+  footer address img{
+    position: relative;
+    top: 0px;
+  } 
+  footer address { 
+    font-size: 18px; 
+  }
+  footer .top .col-xl-4 ul li{  
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  footer .top .col-xl-4 ul.hide li{ 
+    display: none; 
+  } 
+  footer .top .col-xl-4 ul.show { 
+    display: block;
+  }
+  footer .top .col-xl-4 ul.hide li:first-child { 
+    display: block !important;
+    border-bottom: 1px solid #fff; 
+  }
+  footer .top .col-xl-4 ul.hide li:first-child { 
+    display: block !important;
+    border-bottom: 1px solid #fff; 
+  }
+  footer .top .col-xl-4:first-child ul li:first-child {  
+    border-top: 1px solid #fff; 
+    padding-top: 20px;
+  } 
+  footer .top .col-xl-4 ul.hide li:first-child {   
+    position: relative;
+  } 
+  footer .top .col-xl-4 ul.hide li:first-child:before{
+    content: "";
+    position: absolute; 
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png);
+    background-position: center !important;
+    background-size: 14px auto !important;
+    background-repeat: no-repeat !important; 
+    top: 30px;
+    right: 20px;
+  }
+  footer .bot {
+    height: unset !important;
+    padding-bottom: 80px; 
+    padding-top: 30px;
+  }
+  footer .bot .d-flex{ 
+    display: block !important;
+    text-align: center;
+  }
+}
+ 
+ 
+ 
+ 
+ 
  
  
  
