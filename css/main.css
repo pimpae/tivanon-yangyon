@@ -970,6 +970,10 @@ footer h6{
     display: block !important;
     text-align: center;
   }
+  footer h1 { 
+    padding-right: 0px;
+    line-height: 45px; 
+  }
 }
  
  
