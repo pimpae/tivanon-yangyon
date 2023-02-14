@@ -430,6 +430,19 @@ footer .bot{
   color: #fff;
   background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
 }
+.btn-master-xs{
+  padding: 10px 30px  ;
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  transition: .33s all ease-out; 
+}
+.btn-master-xs:hover{
+  color: #fff;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+}
 .home-tips{
   background-color: #fff;
   padding-bottom: 80px;
@@ -803,7 +816,93 @@ footer h6{
   line-height: 50px;
   margin-bottom: 30px;
 }
-
+.banner-account{
+  height: 186px;
+  background: url(../images/acc-title.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+} 
+.banner-account > div{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} 
+.banner-account .h1-botb {  
+  color: #fff;
+  margin-bottom: 20px;
+}
+.banner-account .h1-botb:after { 
+  margin-top: 10px; 
+  background-color: #fff;
+} 
+.banner-account h6{ 
+  color: #fff;
+}
+.account{
+  padding-top: 100px;
+  padding-bottom: 100px;
+} 
+.account h4{
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000;
+}
+.account ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.account ul li{
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.account ul li a{ 
+  padding-left: 40px;
+  color: #58595A;
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  transition: .33s all ease-out; 
+}
+.account ul li a img{
+  position: absolute;
+  width: 20px; 
+  left: 0;
+} 
+.account ul li:hover a{ 
+  color: #E16D22;
+}
+.account ul li.active a{ 
+  color: #E16D22;
+}
+.account .bor{
+  border-right: 1px solid #E2E2E2;
+}
+.account h4.hr{
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #E16D22;
+}
+.form-right{
+  padding-left: 100px;
+}
+.form-right input{
+  height: 50px; 
+  padding: 8px 20px 11px;
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Regular; 
+  margin-bottom: 15px;
+}
+.col-mb{ 
+  padding-left: 0px !important;
+}
 
 
 
@@ -1263,6 +1362,90 @@ footer h6{
   }
   .login-modal .modal-body{ 
     height: 100vh !important; 
+  } 
+  .banner-account{
+    height: 150px;
+    background: url(../images/acc-title-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-account .h1-botb:after {
+    margin-top: 0px;
+    background-color: #fff;
+  }
+  .account{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .account h4 {
+    text-align: center;
+  }
+  .form-right {
+    padding-left: 15px;
+  }
+  .form-right input{
+    margin-bottom: 15px
+  }
+  .col-mb{
+    text-align: center; 
+  }
+  .btn-menu-account{ 
+    font-size: 20px;
+    color: #000;
+    font-family: Kanit-Medium; 
+    border: 1px solid #58595A25;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 40px;
+    position: relative;
+  }
+  .btn-menu-account::after{
+    content: unset;
+  }
+  .btn-menu-account::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    top: 10px;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png) !important;
+    background-position: center !important;
+    background-size: 14px  !important;
+    background-repeat: no-repeat !important;  ;
+  }
+  .btn-menu-account img{
+    height: 20px; 
+    position: absolute;
+    left: 10px;
+    top: 13px;
+  }
+  .btn-menu-account + .dropdown-menu{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item{
+    border-bottom: 1px solid #70707010;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    font-family: Kanit-Medium; 
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item img{
+    position: absolute;
+    width: 18px;
+    left: 10px;
+    top: 16px;
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item:last-child{
+    border-bottom: 0px solid #70707010; 
   }
 }
 
@@ -1284,6 +1467,17 @@ footer h6{
   .promotion-modal .modal-body{
     padding: 20px;
   }
+  .banner-account{
+    height: 150px;
+    background: url(../images/acc-title-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-account .h1-botb:after {
+    margin-top: 0px;
+    background-color: #fff;
+  }
 }
 @media only screen and (width: 1024px) { /* MOBILE */ 
   .promotion-page .promotion > img{ 
@@ -1303,6 +1497,17 @@ footer h6{
   .promotion-modal .modal-body{
     padding: 20px;
   }
+  .banner-account{
+    height: 150px;
+    background: url(../images/acc-title-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-account .h1-botb:after {
+    margin-top: 0px;
+    background-color: #fff;
+  }
 }
 @media only screen and (width: 820px) { /* MOBILE */ 
   .promotion-page .promotion > img{ 
@@ -1321,5 +1526,16 @@ footer h6{
   }
   .promotion-modal .modal-body{
     padding: 20px;
+  }
+  .banner-account{
+    height: 150px;
+    background: url(../images/acc-title-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-account .h1-botb:after {
+    margin-top: 0px;
+    background-color: #fff;
   }
 }
