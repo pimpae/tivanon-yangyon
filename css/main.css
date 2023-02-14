@@ -69,8 +69,8 @@ header .navbar-brand img{
 header .navbar-nav > .nav-item{ 
   height: 90px;
   line-height: 70px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 header .navbar-nav .nav-item.active{
   border-bottom: 3px solid #E2863C; 
@@ -78,7 +78,7 @@ header .navbar-nav .nav-item.active{
 header .navbar-nav .nav-item .nav-link{
   color: #58595A;
   font-family: Kanit-Medium;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 0px;
   padding-right: 0px;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu{
 header .navbar-nav .nav-item.dropdown .dropdown-menu a{ 
   color: #58595A;
   font-family: Kanit-Medium;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 50px;
 }
 header .navbar-nav .nav-item.dropdown .dropdown-menu a:hover{ 
@@ -592,6 +592,245 @@ footer h6{
   font-size: 16px;
   font-family: Kanit-Light; 
 }
+.banner-promotion-cover{
+  height: 300px;
+  background: url(../images/promotion-bn.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+}
+.banner-tips-cover{
+  height: 300px;
+  background: url(../images/top-cover.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+}
+.banner-cover > div{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} 
+.banner-cover h1{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.banner-cover h6{
+  font-family: Kanit-Regular;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fff;
+}
+.promotion-page{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.promotion-page .promotion{
+  margin-bottom: 50px;
+} 
+.promotion-page .promotion > img{
+  object-fit: cover;
+  height: 500px; 
+  margin-bottom: 30px !important;
+} 
+.promotion-page .promotion h6{
+  font-family: BebasNeue-Regular;
+  font-size: 20px;
+  color: #E16D22;
+  margin-bottom: 10px;
+}  
+.promotion-page .promotion h4{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  font-size: 30px;
+  font-family: Kanit-Regular;
+  color: #000000;
+  margin-bottom: 25px;
+} 
+.promotion-page .promotion h5{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}  
+.promotion-modal .modal-dialog{
+  max-width: 1290px;
+} 
+.promotion-modal .modal-content{ 
+  border-radius: 30px; 
+  border: none !important;
+}
+.promotion-modal .modal-header{  
+  font-family: Kanit-Regular;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 30px 30px 0 0; 
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  height: 70px;
+}
+.promotion-modal .modal-body{
+  padding: 70px;
+}
+.promotion-modal h6{
+  font-family: BebasNeue-Regular;
+  font-size: 20px;
+  color: #E16D22;
+  margin-bottom: 10px;
+}  
+.promotion-modal h4{ 
+  font-size: 30px;
+  font-family: Kanit-Regular;
+  color: #000000;
+  margin-bottom: 25px;
+} 
+.promotion-modal p{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000; 
+}   
+.login-modal .modal-dialog{
+  max-width: 1088px;
+} 
+.login-modal .modal-content{ 
+  border-radius: 30px; 
+  border: none !important;
+}
+.login-modal .modal-content{ 
+  border-radius: 30px; 
+  border: none !important;
+}
+.login-modal .modal-body{ 
+  padding: 50px;
+}
+.login-modal .modal-body h3{ 
+  color: #000;
+  font-size: 30px;
+  font-family: Kanit-Regular;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #E16D22;
+}
+.login-modal .modal-body .btn-social{ 
+  height: 50px;
+  width: 100%;
+  padding: 8px 20px 11px;
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Regular;
+}
+.login-modal .modal-body .btn-social img{ 
+  height: 25px;
+  margin-right: 8px;
+}
+.login-modal .modal-body .orx{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.login-modal .modal-body .orx::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  background-color: #E2E2E2;
+  z-index: 1;
+}
+.login-modal .modal-body .orx p{
+  color: #000;
+  font-size: 14px;
+  font-family: Kanit-Regular; 
+  position: absolute;
+  top: 30%;
+  padding: 14px;
+  background-color: #fff; 
+  z-index: 2;
+}
+.login-modal .modal-body .form-group input{
+  height: 50px; 
+  padding: 8px 20px 11px;
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Regular; 
+}
+.login-modal .modal-body form a{  
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Regular; 
+}
+.login-modal .modal-body form .btn-submit{  
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  height: 50px; 
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: Kanit-Regular; 
+  width: 100%;
+  margin-top: 25px;
+  display: block;
+  margin-bottom: 25px;
+}
+.login-modal .modal-body form span{  
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Regular; 
+}
+.login-modal .modal-body form a.active{   
+  color: #E16D22; 
+}
+.alert-modal .modal-dialog{
+  max-width: 812px;
+} 
+.alert-modal .modal-body{
+  padding: 70px;
+}
+.alert-modal .modal-body h3{ 
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000;
+  margin-top: 30px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* 
+  transition: .33s all ease-out; 
+  font-family: Kanit-Regular;
+  font-family: Kanit-Medium; 
+  font-family: BebasNeue-Regular;
+
+
+  88888888888888888888888888
+  88888888888888888888888888
+  88888888888888888888888888
+  88888888888888888888888888
+  88888888888888888888888888
+  88888888888888888888888888 
+*/
+
 @media only screen and (max-width: 1024px) { /* MOBILE */ 
   header nav{ 
     background-color: #F9FBFC;
@@ -974,20 +1213,113 @@ footer h6{
     padding-right: 0px;
     line-height: 45px; 
   }
+  .promotion-page{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .banner-promotion-cover{
+    height: 180px;
+    background: url(../images/promotion-bn-m.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+  }
+  .promotion-page .promotion > img{
+    object-fit: cover;
+    height: 378px; 
+    margin-bottom: 20px !important;
+  } 
+  footer h1:after {
+    content: unset; 
+  } 
+  .promotion-modal .modal-body{
+    padding: 20px;
+  } 
+  .login-modal .modal-body{ 
+    padding: 20px;
+  }
+  .login-modal .modal-body .orx{ 
+    height: 60px;
+  }
+  .login-modal .modal-body .orx::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%; 
+    left: 0;
+    top: 50%;
+    background-color: #E2E2E2;
+    z-index: 1;
+  }
+  .login-modal .modal-body .orx p{  
+    top: 5px; 
+    left: calc(50% - 30px); 
+  }
+  .login-modal .modal-dialog{
+    margin: 0px;
+    height: 100vh !important; 
+  }
+  .login-modal .modal-content{ 
+    border-radius: 0px;
+  }
+  .login-modal .modal-body{ 
+    height: 100vh !important; 
+  }
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
-
-/* 
-  transition: .33s all ease-out; 
-  font-family: Kanit-Regular;
-  font-family: Kanit-Medium; 
-*/
+@media only screen and (width: 768px) { /* MOBILE */ 
+  .promotion-page .promotion > img{ 
+    height: 200px;  
+  } 
+  .banner-promotion-cover{
+    height: 180px;
+    background: url(../images/promotion-bn.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .promotion-page .promotion h4 { 
+    font-size: 24px; 
+    margin-bottom: 15px;
+  }
+  .promotion-modal .modal-body{
+    padding: 20px;
+  }
+}
+@media only screen and (width: 1024px) { /* MOBILE */ 
+  .promotion-page .promotion > img{ 
+    height: 300px;  
+  } 
+  .banner-promotion-cover{
+    height: 180px;
+    background: url(../images/promotion-bn.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .promotion-page .promotion h4 { 
+    font-size: 24px; 
+    margin-bottom: 15px;
+  }
+  .promotion-modal .modal-body{
+    padding: 20px;
+  }
+}
+@media only screen and (width: 820px) { /* MOBILE */ 
+  .promotion-page .promotion > img{ 
+    height: 200px;  
+  } 
+  .banner-promotion-cover{
+    height: 180px;
+    background: url(../images/promotion-bn.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .promotion-page .promotion h4 { 
+    font-size: 24px; 
+    margin-bottom: 15px;
+  }
+  .promotion-modal .modal-body{
+    padding: 20px;
+  }
+}
