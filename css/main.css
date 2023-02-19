@@ -1077,18 +1077,192 @@ footer h6{
   font-size: 20px;
   color: #000;
   font-family: Kanit-Regular; 
+} 
+.banner-contact-cover{
+  height: 300px;
+  background: url(../images/contact-bg.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+}
+.contact-text .contact-img{
+  height: 320px;
+  object-fit: cover;
+} 
+.contact-text h3{ 
+  font-family: Kanit-Regular; 
+  font-size: 30px;
+  color: #E16D22;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.contact-text p{ 
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+  color: #000; 
+  margin-bottom: 5px;
+  padding-left: 26px;
+  position: relative;
+}
+.contact-text p span{ 
+  color: #E16D22;
+}
+.contact-text p img{ 
+  position: absolute;
+  height: 16px;
+  left: 0;
+  top: 5px;
+}
+.btn-click{
+  height: 50px;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 35px;
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+  color: #fff; 
+  border-radius: 5px; 
+  transition: .33s all ease-out; 
+}
+.btn-click:hover{ 
+  color: #fff;  
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+}
+.contact-text hr{
+  border-top: 1px solid #E2E2E2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+} 
+.contact-text h4{ 
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+  color: #000; 
+  margin-bottom: 10px;
+}
+.contact-text h5{ 
+  position: relative;
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+  padding-left: 61px;
+  color: #000; 
+  margin-bottom: 10px;
+}
+.contact-text h5 img{ 
+  position: absolute;
+  left: 0;
+  height: 43px;
+  object-fit: cover;
+  border-radius: 100%;
+} 
+.contact-text h5 span{ 
+  color: #E16D22;
+} 
+.follow-us{
+  border-top: 1px solid #E2E2E2;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-top: 40px;
+}
+.follow-us h4{
+  position: relative;
+  font-family: Kanit-Regular; 
+  font-size: 30px;
+  text-align: center;
+}
+.follow-us .icon{
+  border-radius: 100%;
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 67px;
+  height: 67px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .33s all ease-out; 
+}
+.follow-us .icon img{
+  height: 34px;
+  transition: .33s all ease-out; 
+}
+.follow-us .icon:hover img{
+  height: 21px;
+}
+.modal-map .modal-dialog{
+  max-width: 1024px;
+  border-radius: 0px !important;
+}
+.modal-map .modal-content{
+  border-radius: 0px !important;
+}
+.banner-about-us-cover{
+  height: 300px;
+  background: url(../images/aboutus-bg.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+}
+.about-us-page{
+  margin-top: -2px;
+  background: url(../images/bg-orange2.png);
+  background-position: top right !important;
+  background-size: auto 900px  !important;
+  background-repeat: no-repeat !important;
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+.about-us-page h2{
+  font-family: Kanit-SemiBold;
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.about-us-page p{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000000; 
+}
+.about-us-text{
+  min-height: 850px;
+  padding-bottom: 100px;
+  background: url(../images/about-bg-user.png);
+  background-position: top left !important;
+  background-size: 800px auto  !important;
+  background-repeat: no-repeat !important;
+  margin-top: -60px;
+} 
+.about-us-text h2{
+  font-family: Kanit-SemiBold;
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.about-us-text p{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000000; 
+}
+.about-us-text .flexx{
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 
 
 
-
+ 
 
 /* 
   transition: .33s all ease-out; 
+  #E16D22
   font-family: Kanit-Regular;
   font-family: Kanit-Medium; 
   font-family: BebasNeue-Regular;
+  
 
 
   888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -1706,6 +1880,71 @@ footer h6{
     bottom: 0;
     background-color: rgba(255, 255, 255, .8);
     left: 65px;
+  } 
+  .banner-contact-cover{
+    height: 150px;
+    background: url(../images/contact-bg-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .contact-text .contact-img {
+    height: 241px;
+    object-fit: cover;
+  }
+  .banner-about-us-cover{
+    height: 150px;
+    background: url(../images/aboutus-bg-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important; 
+  }
+  .about-us-page .container .row .col-md-6:nth-child(1){
+    order: 2 !important;
+    display: block;
+  }
+  .about-us-page .container .row .col-md-6:nth-child(2){
+    order: 1 !important;
+    display: block;
+  }
+  .about-us-page {
+    margin-top: 0px;
+    background: url(../images/bg-orange2.png);
+    background-position: top right !important;
+    background-size: auto 280px !important;
+    background-repeat: no-repeat !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-us-page h2{
+    font-size: 30px;
+    margin-top: 70px;
+  }
+  .about-us-page p{ 
+    font-family: Kanit-Light;
+    font-size: 16px;
+  }
+  .about-us-text .flexx {
+    min-height: unset;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .about-us-text{
+    min-height: unset;
+    padding-bottom: 60px;
+    background: #fff;
+    background-position: top left !important;
+    background-size: 800px auto  !important;
+    background-repeat: no-repeat !important;
+    margin-top: 0px;
+  } 
+  .about-us-text h2{
+    font-size: 30px; 
+    margin-top: 50px;
+  }
+  .about-us-text p{ 
+    font-family: Kanit-Light;
+    font-size: 16px;
   }
 }
 
