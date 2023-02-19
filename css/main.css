@@ -1250,10 +1250,323 @@ footer h6{
   align-items: center;
   height: 100%;
 }
-
-
-
-
+.banner-tire-cover{
+  height: 300px;
+  background: url(../images/trie-bg.png);
+  background-position: center !important;
+  background-size: 100% 300px  !important;
+  background-repeat: no-repeat !important;
+}
+.product-main{
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+.product-main .fitter{
+  width: 320px; 
+}
+.product-main .fitter h3{
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000000; 
+  margin-bottom: 20px;
+} 
+.product-main .fitter h3{
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000000; 
+  margin-bottom: 20px;
+}
+.product-main .selectpicker + .btn-light { 
+  border: 1px solid rgba(88, 89, 90, .25);
+  height: 50px;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid rgba(88, 89, 90, .25);
+}
+.product-main  .dropdown-toggle::after { 
+  content: ""; 
+  width: 14px;
+  height: 14px; 
+  border: none;
+  margin-top: 10px;
+  background: url(../images/ionic-ios-arrow-dropdown-circle.png) !important;
+  background-size: 14px 14px !important;
+  background-position:  center center !important;
+}
+.product-main .show .dropdown-toggle::after { 
+  transform: rotate(180deg);
+}
+.search-control{
+  margin-top: 20px;
+  position: relative;
+}
+.search-control .form-control{
+  position: absolute;
+  border: 1px solid rgba(88, 89, 90, .25);
+  border-radius: 5px;
+  height: 50px;
+  font-family: Kanit-Light;
+  font-size: 20px;
+  color: #000000; 
+} 
+.search-control button{
+  position: absolute;
+  top: 11px;
+  right: 13px; 
+  border: none;
+  background-color: transparent;
+} 
+.search-control img{ 
+  width: 24px;
+  height: 24px;
+}
+.fitter-box{
+  display: none;
+} 
+.fitter-box.active{
+  display: block;
+}
+.product-main .fitter h4{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000000; 
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.product-main .fitter h6{
+  font-family: Kanit-Medium; 
+  font-size: 16px;
+  color: #000000; 
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+.product-main .fitter label{
+  font-family: Kanit-Regular;
+  font-size: 14px;
+  color: #000000;  
+  margin-bottom: 5px;
+}
+.fitter form .col-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+.fitter form .col-4:nth-child(3n+1){
+  padding-left: 15px;  
+}
+.fitter form .col-4:nth-child(3n+3){
+  padding-right: 15px;  
+}
+.product-main .fitter hr{
+  border-top: 1px solid #E2E2E2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+} 
+.product-main .fitter .custom-checkbox .custom-control-label::before {
+  border-radius: 0px;
+}
+.product-main .fitter .custom-control-label{
+  font-size: 16px;
+  font-family: Kanit-Light;
+} 
+.brand-car{
+  cursor: pointer !important;
+  position: relative;
+}
+.brand-car:after{
+  content: ""; 
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  right: 0;
+  top: 8px;
+  background: url(../images/Icon-ionic-ios-arrow-down.png) !important;
+  background-size: 14px 8px !important; 
+  transform: rotate(180deg);
+}
+.brand-car.active:after{ 
+  transform: rotate(0deg);
+}
+.brand-car + .brand-tire{ 
+  display: none;
+}
+.brand-car.active + .brand-tire{ 
+  display: block;
+} 
+.tire-car{
+  cursor: pointer !important;
+  position: relative;
+}
+.tire-car:after{
+  content: ""; 
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  right: 0;
+  top: 8px;
+  background: url(../images/Icon-ionic-ios-arrow-down.png) !important;
+  background-size: 14px 8px !important; 
+  transform: rotate(180deg);
+}
+.tire-car.active:after{ 
+  transform: rotate(0deg);
+}
+.tire-car + .tire-tire{ 
+  display: none;
+}
+.tire-car.active + .tire-tire{ 
+  display: block;
+} 
+.product-main .product .custom-control-label::before {
+  border-radius: 0px;
+} 
+.product-main .product .custom-control-label {
+  font-size: 20px;
+  font-family: Kanit-Regular;
+}
+.product-main .product h6{
+  font-size: 20px;
+  font-family: Kanit-Regular;
+}
+.product-main .product hr{
+  border-top: 1px solid #E2E2E2;
+  margin-top: 30px;
+  margin-bottom: 0px;
+} 
+.product-box{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.product-box .photo{
+  height: 316px;
+  object-fit: cover;
+}
+.product-box .brand{
+  height: 31px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.product-box h4{
+  margin-bottom: 10px;
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+}
+.product-box h5{
+  margin-bottom: 10px;
+  font-family: Kanit-Medium; 
+  font-size: 16px;
+  color: #000000;  
+  margin-bottom: 20px;
+}
+.product-box h5 span{
+  font-family: Kanit-Regular;
+}
+.product-box .option{
+  display: flex;
+  justify-content: start;
+}
+.product-box .option{
+  display: flex;
+  justify-content: start;
+}
+.product-box .option img{
+  height: 35px;
+  margin-bottom: 5px;
+}
+.product-box .option h6{
+  font-family: Kanit-Light;
+  font-size: 12px;
+}
+.product-box .option div{
+  margin-right: 15px;
+  text-align: center;
+}
+.product-box .price{
+  border-left: 1px solid #E2E2E2; 
+}
+.product-box .price h6{ 
+  font-family: Kanit-Light;
+  font-size: 16px;
+}
+.product-box .price h6 span{  
+  text-decoration: line-through;
+} 
+.product-box .price h5{ 
+  font-family: Kanit-Light;
+  font-size: 16px;
+}
+.product-box .price h5 span{  
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #E30000;
+} 
+.product-box .price .custom-control-label {
+  font-family: Kanit-Light;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.product-box .price .quantity{
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  width: calc(100% - 75px);
+  position: relative;
+  font-family: Kanit-Regular;
+  font-size: 30px;
+}
+.product-box .price .quantity button{ 
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #fff;
+  position: absolute;
+}
+.product-box .price .quantity .sub{
+  left: 30px;
+}
+.product-box .price .quantity .add{
+  right: 30px;
+}
+.product-box .price .quantity input{ 
+  width: 100%;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-align: center;
+}
+.product-box .price .quantity input::-webkit-outer-spin-button,
+.product-box .price .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product-box .price .btn.btn-cart{
+  position: absolute;
+  right: -75px;
+  top: -2px;
+  width: 65px;
+  height: 50px; 
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+.row .btn-bg{
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  float: left;
+  margin-top: 10px;
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  transition: .33s all ease-out; 
+} 
+.row .btn-bg:hover{
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+} 
  
 
 /* 
