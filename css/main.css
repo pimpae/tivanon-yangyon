@@ -961,7 +961,128 @@ footer h6{
   padding-bottom: 15px;
   border-bottom: 2px solid #E16D22;
 }
- 
+.banner-service-cover{
+  height: 300px;
+  background: url(../images/service-bg.png);
+  background-position: center !important;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+}
+.service-icon{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.service-icon .icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 160px; 
+}
+.service-icon .icon p{ 
+  font-family: Kanit-Regular; 
+  margin-bottom: 16px;
+  color: #000;
+  text-align: center;
+  transition: .33s all ease-out; 
+}
+.service-icon .icon img{
+  position: absolute;
+  top: 0;
+  display: block;
+  margin: auto;
+  transition: .33s all ease-out; 
+  height: 110px;
+}
+.service-icon .icon:hover img{
+  top: -10px;
+}
+.service-data{
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.service-data .img{
+  position: relative;
+} 
+.service-data .img img{
+  height: 538px;
+  object-fit: cover; 
+}
+.service-data .img:after{
+  content: "";
+  position: absolute; 
+  width: 122px;
+  height: 122px;
+  background-color: rgba(255, 255, 255, .8);
+}
+.service-data .img.right:after{ 
+  right: 15px;
+  bottom: 0; 
+}
+.service-data .img.left:after{ 
+  left: 15px;
+  top: 0; 
+}
+.service-text{
+  position: relative; 
+}
+.service-text.right{ 
+  padding-left: 244px;
+} 
+.service-text .icon-img{
+  height: 122px;
+  width: 122px;
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+}
+.service-text .icon-img img{ 
+  object-fit: cover; 
+  display: flex;
+  height: 78px;
+}
+.service-text.right .icon-img{ 
+  left: -15px;
+  bottom: 122px;
+}
+.service-text.left .icon-img{ 
+  right: -15px;  
+  top: 122px;
+}
+.service-text h3{
+  font-size: 50px;
+  color: #000;
+  font-family: Kanit-Regular;
+  margin-bottom: 20px;
+}
+.service-text h4{
+  font-size: 30px;
+  color: #E16D22;
+  font-family: Kanit-Regular;
+  margin-bottom: 5px;
+}
+.service-text ul{
+  padding-left: 20px; 
+}
+.service-text ul li{ 
+  font-size: 20px;
+  color: #000;
+  font-family: Kanit-Regular; 
+}
+.service-text p{ 
+  font-size: 20px;
+  color: #000;
+  font-family: Kanit-Regular; 
+}
+
+
+
+
+
 
 /* 
   transition: .33s all ease-out; 
@@ -970,12 +1091,12 @@ footer h6{
   font-family: BebasNeue-Regular;
 
 
-  88888888888888888888888888
-  88888888888888888888888888
-  88888888888888888888888888
-  88888888888888888888888888
-  88888888888888888888888888
-  88888888888888888888888888 
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
+  888888888888888888888888888888888888888888888888888888888888888888888888888888
 */
 
 @media only screen and (max-width: 1024px) { /* MOBILE */ 
@@ -1510,9 +1631,85 @@ footer h6{
   .account table tr td:last-child img{  
     height: 8px;
   }
+  .banner-service-cover{
+    height: 150px;
+    background: url(../images/service-bg.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .service-icon {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .service-data { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .service-icon .icon img { 
+    height: 85px;
+  }
+  .service-data .img img {
+    height: 217px;
+    object-fit: cover;
+  }
+  .service-text.right {
+    padding-left: 15px;
+  }
+  .service-data .img:after { 
+    width: 50px;
+    height: 50px; 
+  }
+  .service-data .img.right img{ 
+    padding-right: 50px;
+  }
+  .service-data .img.right:after { 
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    right: 65px;
+  }
+  .service-text .icon-img {
+    height: 50px;
+    width: 50px; 
+  }
+  .service-text .icon-img img{
+    height: 30px; 
+  }
+  .service-text.right .icon-img{
+    top: -100px;
+    left: calc(100% - 65px);
+  }
+  .service-text h3 {
+    font-size: 30px; 
+    margin-top: 20px;
+  }
+  .service-text h4 {
+    font-size: 20px;  
+  }
+  .service-text ul li {
+    font-size: 16px;  
+  }
+  .service-text p {
+    font-size: 16px;  
+  } 
+  .service-data .service-text.left{
+    order: 2;
+  }
+  .service-data .img.left img{ 
+    padding-left: 50px;
+  }
+  .service-text.left .icon-img{
+    top: -167px;
+    right: calc(100% - 65px);
+  }
+  .service-data .img.left:after { 
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    left: 65px;
+  }
 }
 
-@media only screen and (width: 768px) { /* MOBILE */ 
+@media only screen and (width: 768px) { /* IPAD */ 
   .promotion-page .promotion > img{ 
     height: 200px;  
   } 
@@ -1600,5 +1797,5 @@ footer h6{
   .banner-account .h1-botb:after {
     margin-top: 0px;
     background-color: #fff;
-  }
-}
+  } 
+} 
