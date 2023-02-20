@@ -56,6 +56,9 @@ header .dropdown:hover>.dropdown-menu {
     max-width: 1640px !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 header nav{ 
   background-color: #F9FBFC;
   height: 90px;
@@ -1791,8 +1794,69 @@ footer h6{
   height: 140px;
   max-width: 100%;
 }
-
-
+.text-black{
+  font-family: Kanit-Light; 
+  font-size: 20px;
+  color: #000000; 
+  transition: .33s all ease-out;
+}
+.text-black:hover{ 
+  color: initial; 
+}
+.account h4.hr-des { 
+  margin-bottom:  20px !important; 
+}
+.history-des{
+  margin-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.history-des h4{
+  font-family: Kanit-Medium; 
+  color: #000000; 
+  font-size: 20px;
+}
+.history-des h4 span{
+  color: #DC632A;
+}
+.history-des h5{
+  font-family: Kanit-Regular; 
+  color: #000000; 
+  font-size: 20px;
+} 
+.history-des .des h6{ 
+  font-family: Kanit-Light;
+  font-size: 20px;
+}
+.history-des .des h6{ 
+  font-family: Kanit-Light;
+  font-size: 16px;
+} 
+.history-des .des h5{ 
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #E16D22;
+}
+.history-des .des h5 span{  
+  font-family: Kanit-Light;
+  font-size: 16px;
+  color: #000;
+  text-decoration: line-through;
+} 
+.history-des .des img{  
+  height: 250px;
+  object-fit: cover;
+} 
+.history-des h4{
+  text-align: left !important;
+}
+.history-des h5{
+  text-align: left !important;
+}
+.history-des .des h4{
+  margin-top: 20px;
+}
 
 
 
