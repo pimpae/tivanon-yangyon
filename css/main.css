@@ -1261,16 +1261,16 @@ footer h6{
   padding-top: 45px;
   padding-bottom: 100px;
 }
-.product-main .fitter{
+.product-main .filter{
   width: 320px; 
 }
-.product-main .fitter h3{
+.product-main .filter h3{
   font-family: Kanit-Regular;
   font-size: 30px;
   color: #000000; 
   margin-bottom: 20px;
 } 
-.product-main .fitter h3{
+.product-main .filter h3{
   font-family: Kanit-Regular;
   font-size: 30px;
   color: #000000; 
@@ -1322,52 +1322,52 @@ footer h6{
   width: 24px;
   height: 24px;
 }
-.fitter-box{
+.filter-box{
   display: none;
 } 
-.fitter-box.active{
+.filter-box.active{
   display: block;
 }
-.product-main .fitter h4{
+.product-main .filter h4{
   font-family: Kanit-Regular;
   font-size: 20px;
   color: #000000; 
   margin-bottom: 10px;
   margin-top: 20px;
 }
-.product-main .fitter h6{
+.product-main .filter h6{
   font-family: Kanit-Medium; 
   font-size: 16px;
   color: #000000; 
   margin-top: 10px;
   margin-bottom: 7px;
 }
-.product-main .fitter label{
+.product-main .filter label{
   font-family: Kanit-Regular;
   font-size: 14px;
   color: #000000;  
   margin-bottom: 5px;
 }
-.fitter form .col-4{
+.filter form .col-4{
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 10px;
 }
-.fitter form .col-4:nth-child(3n+1){
+.filter form .col-4:nth-child(3n+1){
   padding-left: 15px;  
 }
-.fitter form .col-4:nth-child(3n+3){
+.filter form .col-4:nth-child(3n+3){
   padding-right: 15px;  
 }
-.product-main .fitter hr{
+.product-main .filter hr{
   border-top: 1px solid #E2E2E2;
   margin-top: 30px;
   margin-bottom: 30px;
 } 
-.product-main .fitter .custom-checkbox .custom-control-label::before {
+.product-main .filter .custom-checkbox .custom-control-label::before {
   border-radius: 0px;
 }
-.product-main .fitter .custom-control-label{
+.product-main .filter .custom-control-label{
   font-size: 16px;
   font-family: Kanit-Light;
 } 
@@ -1439,7 +1439,31 @@ footer h6{
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 1px solid #E2E2E2;
-}
+  overflow: hidden;
+  position: relative;
+} 
+.product-box .promotion {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 86px 86px 0 0;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border-color: #e16f22 transparent transparent transparent;
+}  
+.product-box .promotion div{ 
+  border-color: #e16f22 transparent transparent transparent;
+  font-family: Kanit-Medium; 
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  margin-top: -65px;
+  transform: rotate(-45deg);
+}   
 .product-box .photo{
   height: 316px;
   object-fit: cover;
@@ -1567,7 +1591,203 @@ footer h6{
 .row .btn-bg:hover{
   background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
 } 
- 
+.btn-filter{
+  text-align: left;
+  border-radius: 0px;
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  height: 60px;
+  padding-left: 36px;
+  padding-right: 36px;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+  margin-bottom: 20px;
+} 
+.btn-filter img{
+  float: right;
+  margin-top: 5px;
+} 
+.product-box .pro-img{
+  height: 316px;
+  object-fit: cover;
+}
+.product-des{
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+.product-des .photo img{
+  height: 500px;
+  object-fit: cover;
+}
+.product-des .brand{
+  height: 30px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.product-des h4{
+  font-family: Kanit-Regular;
+  margin-top: 20px;
+  color: #000;
+  font-size: 30px;
+}
+.product-des h6{
+  font-family: Kanit-Light; 
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.product-des h5{
+  font-family: Kanit-Regular; 
+  color: #E16D22;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.product-des h5 span{
+  font-family: Kanit-Light; 
+  font-size: 16px;
+  color: #000; 
+  text-decoration: line-through;
+}
+.product-des .option{
+  display: flex;
+  justify-content: start;
+}
+.product-des .option{
+  display: flex;
+  justify-content: start;
+}
+.product-des .option img{
+  height: 35px;
+  margin-bottom: 5px;
+}
+.product-des .option h6{
+  font-family: Kanit-Light;
+  font-size: 12px;
+}
+.product-des .option div{
+  margin-right: 15px;
+  text-align: center;
+} 
+.product-des .quantity{
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  width: calc(100% - 75px);
+  position: relative;
+  font-family: Kanit-Regular;
+  font-size: 30px;
+}
+.product-des .quantity button{ 
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #fff;
+  position: absolute;
+}
+.product-des .quantity .sub{
+  left: 30px;
+}
+.product-des .quantity .add{
+  right: 30px;
+}
+.product-des .quantity input{ 
+  width: 100%;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-align: center;
+}
+.product-des .quantity input::-webkit-outer-spin-button,
+.product-des .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product-des .btn.btn-cart{
+  position: absolute;
+  right: -75px;
+  top: -2px;
+  width: 65px;
+  height: 50px; 
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+} 
+.product-des .custom-checkbox .custom-control-label::before {
+  border-radius: 0px;
+}
+.product-des .table thead tr th{ 
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  color: #fff;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+}
+.product-des .table tbody tr td{ 
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  color: #000; 
+  border: 1px solid #E2E2E2;
+}
+.product-des .table tbody tr:nth-child(odd) td{ 
+  background-color: #EDEDED; 
+}
+.product-des .table tbody tr:nth-child(even) td{ 
+  background-color: #fff; 
+}
+.product-des .table tbody tr td:nth-child(odd) {  
+  border-right: 0px;
+}
+.product-des .table tbody tr td:nth-child(even){  
+  border-left: 0px;
+  text-align: right;
+}
+.product-des .promotion {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 86px 86px 0 0;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border-color: #e16f22 transparent transparent transparent;
+}  
+.product-des .promotion div{ 
+  border-color: #e16f22 transparent transparent transparent;
+  font-family: Kanit-Medium; 
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  margin-top: -65px;
+  transform: rotate(-45deg);
+}  
+.product-table h4{
+  font-family: Kanit-Medium; 
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.product-table .table thead tr th{
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.product-table .table tbody tr td{
+  border: 1px solid #E2E2E2;
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+  color: #000000;
+  text-align: center; 
+}
+
+
+
 
 /* 
   transition: .33s all ease-out; 
@@ -1577,7 +1797,7 @@ footer h6{
   font-family: BebasNeue-Regular;
   
 
-
+  IPAD
   888888888888888888888888888888888888888888888888888888888888888888888888888888
   888888888888888888888888888888888888888888888888888888888888888888888888888888
   888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -2259,6 +2479,108 @@ footer h6{
     font-family: Kanit-Light;
     font-size: 16px;
   }
+  .banner-tire-cover{
+    height: 150px;
+    background: url(../images/trie-bg-mb.png);
+    background-position: center !important;
+    background-size: auto 150px  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .product-main .product .custom-control-label {
+    font-size: 12px;
+    font-family: Kanit-Light;
+  }
+  .product-main .product h6 {
+    font-size: 12px;
+    font-family: Kanit-Light;
+  }
+  .product-main .product hr { 
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .product-box {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    text-align: center;
+  }
+  .product-box .pro-img{
+    height: 251px;
+    object-fit: cover;
+    margin-bottom: 24px;
+  }
+  .product-box .option {
+    display: flex;
+    justify-content: center;
+  }  
+  .filter-modal .modal-dialog{
+    margin: 0px;
+    margin-right: 55px; 
+  }
+  .filter-modal .modal-content{ 
+    border-radius: 0px;
+  }
+  .filter-modal .modal-body{ 
+    height: 100% !important; 
+  }   
+  .filter-modal  .product-main .filter{
+    display: block;
+  }
+  .filter-modal .product-main .filter {
+    width: 100%;
+  }
+  .product-main {
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }  
+  .product-des .photo img{
+    height: 251px;
+    object-fit: cover; 
+    margin-bottom: 20px;
+  }
+  .product-des .brand{
+    height: 31px;
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+  }
+  .product-des h4{ 
+    font-size: 20px;
+    text-align: center;
+  }
+  .product-des h6{ 
+    text-align: center;
+  }
+  .product-des h5{ 
+    text-align: center;
+  }
+  .product-des .option{ 
+    justify-content: center;
+  }
+  .product-des .btn-bg{
+    margin: auto;
+    margin-top: 10px;
+  }
+  .product-des .position-relative{
+    text-align: center;
+  }
+  .product-des .table{
+    margin-top: 20px;
+  } 
+  .product-des{
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .product-table h4{ 
+    font-size: 20px; 
+  }
+  .product-table .table thead tr th{ 
+    font-size: 14px; 
+  }
+  .product-table .table tbody tr td{ 
+    font-size: 12px; 
+  }
+  
 }
 
 @media only screen and (width: 768px) { /* IPAD */ 
