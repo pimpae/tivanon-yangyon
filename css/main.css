@@ -1857,7 +1857,68 @@ footer h6{
 .history-des .des h4{
   margin-top: 20px;
 }
-
+.step-cart{
+  background-color: #F9FBFC;
+  padding: 50px 0px 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-cart .box-step{
+  width: 840px;
+  max-width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  position: relative;
+} 
+.step-cart .box-step:after{
+  content: "";
+  background-color: #E16D22;
+  position: absolute;
+  width: calc(100% - 220px);
+  height: 10px;
+  top: 35px;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+} 
+.step-cart .box-step .step{
+  width: 33% !important;
+}
+.step-cart .box-step .step div{
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px; 
+  font-family: BebasNeue-Regular;
+  font-size: 50px;
+  color: #fff;
+  line-height: 80px;
+  z-index: 3;
+  position: relative;
+}
+.step-cart .box-step .step h3{
+  font-family: Kanit-Medium; 
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+}
+.step-cart .box-step .step.active div{
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+}
+.step-cart .box-step .step.active h3{
+  color: #E16D22;
+}
 
 
 /* 
