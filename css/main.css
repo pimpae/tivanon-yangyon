@@ -2514,10 +2514,10 @@ footer h6{
   }  
   .filter-modal .modal-dialog{
     margin: 0px;
-    margin-right: 55px; 
+    margin-right: 55px;  
   }
   .filter-modal .modal-content{ 
-    border-radius: 0px;
+    border-radius: 0px;  
   }
   .filter-modal .modal-body{ 
     height: 100% !important; 
@@ -2581,6 +2581,12 @@ footer h6{
     font-size: 12px; 
   }
   
+  .filter-modal.wheel .modal-dialog{ 
+    height: 100%;
+  }
+  .filter-modal.wheel .modal-content{  
+    height: 100%;
+  }
 }
 
 @media only screen and (width: 768px) { /* IPAD */ 
