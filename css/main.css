@@ -56,6 +56,11 @@ header .dropdown:hover>.dropdown-menu {
     max-width: 1640px !important;
   }
 }
+@media (min-width: 1200px){
+  .container.container2, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1370px !important;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -421,7 +426,7 @@ footer .bot{
   left: 5%;  
 }
 .btn-master{
-  padding: 13px 30px  ;
+  padding: 10px 30px  ;
   background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: #fff;
@@ -443,6 +448,19 @@ footer .bot{
   transition: .33s all ease-out; 
 }
 .btn-master-xs:hover{
+  color: #fff;
+  background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+}
+.btn-cancle{
+  padding: 10px 30px  ;
+  background: #E2E2E2;
+  border-radius: 5px;
+  color: #000;
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  transition: .33s all ease-out; 
+}
+.btn-cancle:hover{
   color: #fff;
   background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
 }
@@ -1919,6 +1937,322 @@ footer h6{
 .step-cart .box-step .step.active h3{
   color: #E16D22;
 }
+.main-cart{
+  padding-top: 45px;
+  padding-bottom: 80px;
+} 
+.h4-cart{ 
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #000;
+}
+.h5-cart{ 
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  color: #000;
+  text-align: right;
+}
+.h5-cart span{
+  color: #E16D22;
+}
+.main-cart .borbot{
+  border-bottom: 4px solid #E16D22;
+}
+.table-cart{
+  margin-top: 15px;
+}
+.table-cart thead tr th{
+  margin-top: 15px;
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  border-top: 0px;
+  vertical-align: middle;
+}
+.table-cart thead tr th:first-child{   
+  padding-left: 0px;
+}
+.table-cart tbody tr td{
+  margin-top: 15px;
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  vertical-align: middle;
+}
+.table-cart tbody tr td h6{ 
+  font-family: Kanit-Regular; 
+  font-size: 14px;
+}
+.table-cart tbody tr td:first-child{   
+  padding-left: 0px;
+}
+.table-cart tbody tr td:last-child{  
+  text-align: right;
+  padding-right: 0px;
+}
+.table-cart tbody tr td:last-child img{  
+  height: 17px;
+}
+.main-cart .quantity{
+  height: 38px; 
+  border: 1px solid #58595A40;
+  border-radius: 5px;
+  width: 100px;
+  position: relative;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  line-height: 34px;
+  display: block;
+  margin: auto;
+}
+.main-cart .quantity button{ 
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #fff;
+  position: absolute;
+}
+.main-cart .quantity .sub{
+  left: 10px;
+}
+.main-cart .quantity .add{
+  right: 10px;
+}
+.main-cart .quantity input{ 
+  width: 98%;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-align: center;
+}
+.main-cart .quantity input::-webkit-outer-spin-button,
+.main-cart .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
+.form-cart{
+  margin-top: 30px;
+} 
+.form-cart h4{
+  font-size: 20px;
+  font-family: Kanit-Regular;
+  margin-bottom: 15px;
+}
+.form-cart .custom-checkbox .custom-control-label::before {
+  border-radius: 0px;
+}
+.form-cart .custom-checkbox .custom-control-label {
+  font-size: 14px;
+  font-family: Kanit-Regular;
+}
+.form-cart input.form-control{
+  height: 50px;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  margin-top: 20px;
+  max-width: 397px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.form-cart textarea.form-control.mark{ 
+  height: 100px;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  margin-top: 20px;
+  max-width: 397px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.form-cart textarea.form-control.address{ 
+  height: 168px;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  margin-top: 20px;
+  max-width: 397px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.form-cart .sum{ 
+  display: block;
+  margin-left: auto;
+  max-width: 397px;
+  background-color: #F9FBFC;
+  padding: 29px 37px 34px;
+}
+.form-cart .sum h3{ 
+  font-family: Kanit-Regular;
+  font-size: 25px;
+  color: #E16D22;
+} 
+.form-cart .sum h4{ 
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 20px;
+  margin-top: 25px;
+} 
+.form-cart .sum h4 span{ 
+  float: right;
+} 
+.cart-box{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E2E2E2; 
+}
+.cart-box ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.cart-box ul li{
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.cart-box ul li > div:nth-child(1){
+  width: 25%; 
+  font-family: Kanit-Medium; 
+}
+.cart-box ul li h6{
+  font-size: 16px;
+  font-family: Kanit-Light; 
+}
+.cart-box ul li > div:nth-child(2){ 
+  width: 75%; 
+  font-family: Kanit-Light; 
+}
+.cart-box ul li > div:nth-child(2) img{ 
+  height: 14px;
+}
+.cart-box ul li .quantity{ 
+  margin: unset;
+}
+.confirm-cart{
+  padding-top: 40px;
+  padding-bottom: 100px;
+} 
+.confirm-cart h3{
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.confirm-cart h3 img{ 
+  height: 22px;
+  margin-top: -5px;
+  margin-right: 12px;
+}
+.confirm-cart .box-confirm{ 
+  padding: 20px 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #F9FBFC;
+}
+.confirm-cart .box-confirm h4{ 
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #E16D22;
+  margin-bottom: 5px;
+}
+.confirm-cart .box-confirm h5{ 
+  font-family: Kanit-Regular;
+  font-size: 20px;
+  color: #000;
+}
+.confirm-cart .box-confirm .table-confirm thead tr th{  
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  border-bottom: 5px solid #E2E2E2;
+}
+.confirm-cart .box-confirm .table-confirm tbody tr td{  
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+  border-bottom: 1px solid #E2E2E2;
+  vertical-align: middle;
+}
+.confirm-cart .box-confirm .table-confirm tbody tr td img{  
+  height: 14px;
+}
+.confirm-cart .box-confirm .table-confirm tbody tr td:nth-child(1){  
+  padding-left: 0px; 
+} 
+.confirm-cart .box-confirm .table-confirm thead tr th:nth-child(n+3){  
+  text-align: center;
+}
+.confirm-cart .box-confirm .table-confirm tbody tr td:nth-child(n+3){  
+  text-align: center;
+}   
+.confirm-cart .box-confirm .table-confirm tfoot tr th{  
+  border-bottom: 1px solid #E2E2E2;
+  vertical-align: middle; 
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+}   
+.confirm-cart .box-confirm .table-confirm tfoot tr th:nth-child(1){  
+  padding-left: 0px; 
+}  
+.confirm-cart .box-confirm .table-confirm tfoot tr:nth-child(1) th{  
+  padding-left: 0px; 
+  border-bottom: 5px solid #E2E2E2;
+  padding-top: 20px;
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+}  
+.confirm-cart .box-confirm .table-confirm tfoot tr th h3{   
+  font-family: Kanit-Regular; 
+  font-size: 30px;
+  color: #E16D22;
+}  
+.confirm-cart .box-confirm .table-confirm tfoot tr:nth-child(2) th{  
+  padding-left: 0px; 
+}  
+.confirm-cart .box-confirm .table-confirm tfoot tr th:nth-child(2) {  
+  text-align: right;
+}  
+.cart-box h3{
+  font-family: Kanit-Medium; 
+  font-size: 20px;
+  border-bottom: 4px solid #E2E2E2;
+  width: 100%;
+  padding-bottom: 4px;
+}
+.cart-box h2{
+  font-family: Kanit-Medium; 
+  font-size: 25px; 
+  color: #E16D22;
+  float: right;
+  margin-bottom: 0px;
+}
+.cart-box div span{
+  float: right;
+}
+.confirm-cart{
+  padding-top: 40px;
+  padding-bottom: 100px;
+} 
+.main-cart .custom-control .custom-control-label{
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+}
+.main-cart .custom-control .custom-control-label img{
+  height: 42px;
+}
+.main-cart .custom-control .custom-control-label a{
+  font-family: Kanit-Regular; 
+  font-size: 16px;
+  text-decoration: underline; 
+  color: #E16D22; 
+}
+.main-cart .custom-control.custom-checkbox .custom-control-label::before {
+  border-radius: 0px;
+}
+
+
+
+
+ 
+
 
 
 /* 
@@ -1927,8 +2261,7 @@ footer h6{
   font-family: Kanit-Regular;
   font-family: Kanit-Medium; 
   font-family: BebasNeue-Regular;
-  
-
+   
   IPAD
   888888888888888888888888888888888888888888888888888888888888888888888888888888
   888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -2723,6 +3056,37 @@ footer h6{
     object-fit: cover;
     height: 40px;
     max-width: 100%;
+  }
+  .step-cart { 
+    padding: 20px 0px 25px; 
+  }
+  .step-cart .box-step .step div{
+    height: 50px;
+    width: 50px; 
+    font-size: 30px; 
+    line-height: 55px;
+  }
+  .step-cart .box-step .step h3 {
+    font-family: Kanit-Regular;
+    font-size: 12px; 
+  }
+  .step-cart .box-step:after { 
+    width: calc(100% - 158px);
+    height: 5px;
+    top: 25px; 
+  }
+  .h5-cart{
+    text-align: left;
+  }
+  .borbot{
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .form-cart .pl-0{
+    padding-left: 15px !important;
+  }
+  .form-cart .pr-0{
+    padding-right: 15px !important;
   }
 }
 

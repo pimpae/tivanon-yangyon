@@ -113,7 +113,7 @@
 				</div>
 				<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
 					<ul class="navbar-nav ml-auto flex-nowrap"> 
-						<li class="nav-item  active">
+						<li class="nav-item">
 							<a href="index.html" class="nav-link">Home</a>
 						</li>  
 						<li class="nav-item dropdown">
@@ -129,7 +129,7 @@
 						<li class="nav-item">
 							<a href="service.html" class="nav-link">SERVICES</a>
 						</li> 
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="promotion.html" class="nav-link">PROMOTIONS</a>
 						</li> 
 						<li class="nav-item">
@@ -140,10 +140,17 @@
 						</li> 
 						<li class="nav-item">
 							<a href="contact.html" class="nav-link">Contact</a>
-						</li> 
-						<li class="nav-item">
-							<a href="#" class="btn btn-login" data-toggle="modal" data-target="#modalLogin">Login</a>
-						</li> 
+						</li>  
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDrop" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+								<img src="images/icon-user.png" alt="">
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDrop">
+								<li><a class="dropdown-item" href="product-tires.html">TIRES</a></li>
+								<li><a class="dropdown-item" href="product-wheels.html">WHEELS</a></li>
+								<li><a class="dropdown-item" href="product-other.html">OTHER PRODUCTS</a></li>
+							</ul>
+						</li>
 						<li class="nav-item">
 							<a href="order-list.html" class="icon-cart">
 								<img src="images/icon-cart.png" alt="icon-cart">
@@ -165,251 +172,170 @@
 			</div> 
 		</nav>
 	</header>
+	 
 	<main>
-		<section class="home-sec1">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-7">
-						<div class="search-home">
-							<div>
-								<h1>ค้นหาสินค้า</h1>
-								<form>
-									<div class="row justify-content-center">
-										
-										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="type_yang1" name="type_yang" class="custom-control-input">
-											<label class="custom-control-label" for="type_yang1">ยางรถยนต์</label>
-										</div>
-										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="type_yang2" name="type_yang" class="custom-control-input">
-											<label class="custom-control-label" for="type_yang2">ล้อแม็กซ์</label>
-										</div>
+		<div class="container-fluid banner-account">
+			<div>
+				<div> 
+					<h1 class="h1-botb">Basket</h1>
+					<h6>Home / Basket</h6>
+				</div>
+			</div>
+		</div> 
+		<div class="container-fluid step-cart">
+			<div class="box-step">
+				<div class="step active">
+					<div>01</div>
+					<h3>ข้อมูลการสั่งซื้อ</h3>
+				</div>
+				<div class="step active">
+					<div>02</div>
+					<h3>ตรวจสอบการสั่งซื้อ</h3>
+				</div>
+				<div class="step">
+					<div>03</div>
+					<h3>ชำระเงิน</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container container2 confirm-cart">
+			<h3><img src="images/Icon-awesome-calendar-alt.png" alt=""> วันที่ : 11/12/2565 เวลา : 20:31:32</h3>
 
+			<div class="box-confirm">
+				<h4>ชื่อลูกค้า</h4>
+				<h5>ปิยะ ไทยพานิช</h5>
+			</div>
 
-									</div>
-									<div class="form-group"> 
-										<select class="selectpicker w-100" title="ความสูงของแก้มยาง" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0">ทั้งหมด</option>
-											<option value="1">250</option>
-											<option value="2">1100</option>
-											<option value="3">100</option> 
-											<option value="4">225</option>  
-										</select> 
-									</div>
-									<div class="form-group"> 
-										<select class="selectpicker w-100" title="ความกว้างของหน้ายาง" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0">ทั้งหมด</option>
-											<option value="1">10</option>
-											<option value="2">11</option>
-											<option value="3">12</option>  
-										</select> 
-									</div>
-									<div class="form-group"> 
-										<select class="selectpicker w-100" title="ขนาดของขอบล้อ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-											<option value="0">ทั้งหมด</option>
-											<option value="1">10</option>
-											<option value="2">11</option>
-											<option value="3">12</option> 
-											<option value="4">13</option> 
-											<option value="5">14</option> 
-										</select>
-									</div>
-									<div class="form-group "> 
-										<div class="row">
-											<div class="col-6 text-left">
-												<button type="button" class="btn btn-search">ค้นหา</button>
-											</div>
-											<div class="col-6 text-right">
-												<a href="#" class="link">เรียนรู้วิธีดูขนาดยาง</a>
-											</div>
-										</div>
-									</div>
-								</form>
+			<div class="box-confirm">
+				<h4>ข้อมูลการจัดส่งสินค้า</h4>
+				<h5>บริษัท ม๊อกอัพ จำกัด แขวงประเวศ เขตประเวศ กรุงเทพ 10250</h5>
+			</div>
+
+			<div class="box-confirm">
+				<h4>รายละเอียดการสั่งซื้อ</h4> 
+
+				<table class="table table-confirm mb-x">
+					<thead>
+						<tr>
+							<th>รหัสสินค้า</th>
+							<th>ชื่อสินค้า</th>
+							<th>คะแนน</th>
+							<th>ราคา</th>
+							<th>จำนวน</th>
+							<th>รวม</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="images/l2.png" alt="">
+								<h6>PRO-0000014024</h6>
+							</td>
+							<td>ยางนอก125/70D15 YK/Y870 95M *VN ปี19 ราคาพิเศษ</td>
+							<td>0</td>
+							<td>5,000</td>
+							<td>4</td>
+							<td>20,000</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/l2.png" alt="">
+								<h6>PRO-0000014024</h6>
+							</td>
+							<td>ยางนอก125/70D15 YK/Y870 95M *VN ปี19 ราคาพิเศษ</td>
+							<td>0</td>
+							<td>5,000</td>
+							<td>4</td>
+							<td>20,000</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="6">สรุปรายการสั่งซื้อ</th>
+						</tr>
+						<tr>
+							<th colspan="4">สรุปรายการสั่งซื้อ</th>
+							<th colspan="4">8</th>
+						</tr>
+						<tr>
+							<th colspan="4">ราคารวม</th>
+							<th colspan="2"><h3>40,000</h3></th>
+						</tr>
+						<tr> 
+							<th colspan="4"></th>
+							<th colspan="2">คะแนนรวม 0 Point</th>
+						</tr>
+					</tfoot>
+				</table>	
+
+				
+				<div class="cart-box pc-x"> 
+					<ul>
+						<li>
+							<div>รหัสสินค้า</div>
+							<div> 
+								<img src="images/l2.png" alt="">
+								<h6>PRO-0000014024</h6>
 							</div>
-						</div>
+						</li>
+						<li>
+							<div>ชื่อสินค้า</div>
+							<div>ยางนอก125/70D15 YK/Y870 <br> 95M *VN ปี19 ราคาพิเศษ</div>
+						</li>
+						<li>
+							<div>คะแนน</div>
+							<div>0</div>
+						</li>
+						<li>
+							<div>ราคา</div>
+							<div>5,000</div>
+						</li>
+						<li>
+							<div>จำนวน</div> 
+							<div>4</div> 
+						</li>
+						<li>
+							<div>รวม</div>
+							<div>20,000</div>
+						</li> 
+						<li> 
+							<h3>สรุปรายการสั่งซื้อ</h3>
+						</li> 
+						<li>
+							<div class="w-75">รายการสินค้าทั้งหมด</div>
+							<div><span>8</span></div>
+						</li> 
+						<li>
+							<div>ราคารวม</div>
+							<div><h2>40,000</h2></div>
+						</li> 
+						<li>
+							<div>&nbsp;</div>
+							<div class="text-right">คะนแนนรวม 0 Point</div>
+						</li> 
+					</ul>
+				</div>
+
+
+			</div>
+
+			<div class="col-12">
+				
+				<div class="row"> 
+					<div class="col-6 p-0">
+						<a href="order-list.html" class="btn btn-cancle">ย้อนกลับ</a>
 					</div>
-					<div class="col-xl-5">
-						<div id="slide1" class="carousel slide" data-ride="carousel">
-							<!-- Indicators -->
-							<ul class="carousel-indicators">
-								<li data-target="#slide1" data-slide-to="0" class="active"></li>
-								<li data-target="#slide1" data-slide-to="1"></li>
-								<li data-target="#slide1" data-slide-to="2"></li>
-							</ul>
-							<!-- The slideshow -->
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="images/img-promotion.png" alt="promotion" class="img-fluid d-block m-auto" >
-								</div> 
-								<div class="carousel-item">
-									<img src="images/img-promotion.png" alt="promotion" class="img-fluid d-block m-auto" >
-								</div> 
-								<div class="carousel-item">
-									<img src="images/img-promotion.png" alt="promotion" class="img-fluid d-block m-auto" >
-								</div> 
-							</div>
-							<!-- Left and right controls -->
-							<a class="carousel-control-prev" href="#slide1" data-slide="prev">
-								<span class="carousel-control-prev-icon"></span>
-							</a>
-							<a class="carousel-control-next" href="#slide1" data-slide="next">
-								<span class="carousel-control-next-icon"></span>
-							</a>
-						</div>
+					<div class="col-6 p-0 text-right">
+						<a href="checkout.html" class="btn btn-master">ยืนยันการสั่งซื้อ</a> 
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="home-service">
-			<div class="container">
-				<div class="main">
-					<h1 class="h1-botb">Service</h1>
-					<div class="row row-set">
-						<div class="col-2">
-							<a href="#"> 
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon1.png" alt="ยางรถยนต์">
-										<h4>ยางรถยนต์</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-						<div class="col-2">
-							<a href="#"> 
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon2.png" alt="น้ำมันเครื่อง">
-										<h4>น้ำมันเครื่อง</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-						<div class="col-2">
-							<a href="#"> 
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon3.png" alt="แบตเตอรี่">
-										<h4>แบตเตอรี่</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-						<div class="col-2">
-							<a href="#">
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon4.png" alt="โช้คอัพ, ระบบช่วงล่าง">
-										<h4>โช้คอัพ, ระบบช่วงล่าง</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-						<div class="col-2">
-							<a href="#"> 
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon5.png" alt="ระบบเบรก">
-										<h4>ระบบเบรก</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-						<div class="col-2">
-							<a href="#"> 
-								<div class="btn-service">
-									<div> 
-										<img src="images/sicon6.png" alt="ตั้งศูนย์">
-										<h4>ตั้งศูนย์</h4>
-									</div>
-								</div>
-							</a>
-						</div> 
-					</div>
-					<div class="row"> 
-						<div class="col-xl-12 text-center">
-							<a href="#" class="btn btn-master">บริการทั้งหมด</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="home-tips">
-			<div class="container">
-				<h1 class="h1-botb">tips</h1>
-				<ul id="tips">
-					<li>
-						<div class="tips-box">
-							<img src="images/t1.png" class="img img-fluid" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
-							<h6>22 • 10 • 2527</h6>
-							<h4>ลมธรรมดากับลมไนโตรเจน <br>
-								เติมผสมกันได้</h4> 
-							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
 
-						</div>
-					</li>
-					<li>
-						<div class="tips-box">
-							<img src="images/t2.png" class="img img-fluid" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
-							<h6>22 • 10 • 2527</h6>
-							<h4>เช็ครถรับหน้าฝน ขับขี่หน้าฝนให้ปลอดภัย <br>
-								ด้วยรักและห่วงใยจากติวานนท์การยาง</h4>
-							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
 
-						</div>
-					</li>
-					<li>
-						<div class="tips-box">
-							<img src="images/t3.png" class="img img-fluid" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
-							<h6>22 • 10 • 2527</h6>
-							<h4>หมดปัญหากลิ่นอับกวนใจในรถ ฤดูฝนที่ไร <br>
-								ปัญหากลิ่นอัพในรถมากวนใจทุกที</h4>
-							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
 
-						</div>
-					</li>
-					<li>
-						<div class="tips-box">
-							<img src="images/t2.png" class="img img-fluid" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
-							<h6>22 • 10 • 2527</h6>
-							<h4>เช็ครถรับหน้าฝน ขับขี่หน้าฝนให้ปลอดภัย <br>
-								ด้วยรักและห่วงใยจากติวานนท์การยาง</h4>
-							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
-
-						</div>
-					</li>
-					<li>
-						<div class="tips-box">
-							<img src="images/t1.png" class="img img-fluid" alt="ลมธรรมดากับลมไนโตรเจนเติมผสมกันได้">
-							<h6>22 • 10 • 2527</h6>
-							<h4>ลมธรรมดากับลมไนโตรเจน <br>
-								เติมผสมกันได้</h4> 
-							<a href="#">อ่านต่อ <img src="images/ionic-ios-arrow-dropleft-circle.png" alt=""></a>
-
-						</div>
-					</li>
-				</ul>
-				<br>
-				<div class="col-xl-12 text-center">
-					<a href="#" class="btn btn-master">ดูทั้งหมด</a>
-				</div>
-			</div>
- 
-		</section>
-		<section class="home-logo">
-			<div class="container">
-				<ul id="home-logo">
-					<li><img src="images/l1.png" alt=""></li>
-					<li><img src="images/l2.png" alt=""></li>
-					<li><img src="images/l3.png" alt=""></li>
-					<li><img src="images/l4.png" alt=""></li>
-					<li><img src="images/l5.png" alt=""></li>
-					<li><img src="images/l6.png" alt=""></li>
-					<li><img src="images/l7.png" alt=""></li>
-				</ul>
-			</div>
-		</section>
+		</div>
 	</main>
+   
 	<footer> 
 		<div class="top">
 			<div class="container">
@@ -636,7 +562,7 @@
 						<img src="images/ionic-md-checkmark-circle-outline.png" alt="checkmark">
 						<h3>กรุณาตรวจสอบ Email หรือ SMS ที่ท่านได้ลงทะเบียนไว้
 							เพื่อยืนยันตัวตน</h3>
-						<a href="account.html" class="btn btn-master-xs">ตกลง</a>
+						<a href="account.html" class="btn btn-master">ตกลง</a>
 					</div>
 				</div> 
 			</div>
@@ -652,7 +578,7 @@
 						<h3>ระบบได้ทำการเปลี่ยนรหัสผ่านของท่านแล้ว
 							กรุณาตรวจสอบ Email หรือ SMS ที่ท่านได้ลงทะเบียนไว้
 							เพื่อยืนยันตัวตน</h3>
-						<a href="account.html" class="btn btn-master-xs">ตกลง</a>
+						<a href="account.html" class="btn btn-master">ตกลง</a>
 					</div>
 				</div> 
 			</div>
@@ -670,7 +596,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
 
 	<script>
-		
+
+		$('.add').click(function () {
+			if ($(this).prev().val() < 99) {
+			$(this).prev().val(+$(this).prev().val() + 1);
+			}
+		});
+		$('.sub').click(function () {
+			if ($(this).next().val() > 1) {
+			if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+			}
+		});
 
 		$('.register-show').on( "click", function() {
 			$('#modalLogin').modal('hide');
@@ -681,94 +617,6 @@
 			$('#modalRegister').modal('hide');
 			$('#modalAlert1').modal('show');
 		}); 
-
-		$(document).ready(function() { 
-
-			$('#tips').lightSlider({
-				item:3,
-				loop:false,
-				slideMove:1,
-				easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-				speed:600,
-				responsive : [
-					{
-						breakpoint:1900,
-						settings: {
-							item:3,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:1200,
-						settings: {
-							item:3,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:800,
-						settings: {
-							item:2,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:480,
-						settings: {
-							item:1,
-							slideMove:1
-						}
-					}
-				]
-			});  
-
-			
-			$('#home-logo').lightSlider({
-				item: 6,
-				loop:false,
-				slideMove:1,
-				centerSlide:true,   
-				easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-				speed:600,
-				responsive : [
-					{
-						breakpoint:1900,
-						settings: {
-							item:7,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:1200,
-						settings: {
-							item:5,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:800,
-						settings: {
-							item:3,
-							slideMove:1,
-							slideMargin:6,
-						}
-					}, 
-					{
-						breakpoint:480,
-						settings: {
-							item:2.5,
-							slideMove:1
-						}
-					}
-				]
-			});  
-		});
-		
  
 
 		$('.btn-menu').click(function(){    
