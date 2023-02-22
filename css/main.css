@@ -628,14 +628,14 @@ footer h6{
 }
 .banner-promotion-cover{
   height: 300px;
-  background: url(../images/promotion-bn.png);
+  background: url(../images/promotion.jpg);
   background-position: center !important;
   background-size: 100%  !important;
   background-repeat: no-repeat !important;
 }
 .banner-tips-cover{
   height: 300px;
-  background: url(../images/top-cover.png);
+  background: url(../images/tips.jpg);
   background-position: center !important;
   background-size: 100%  !important;
   background-repeat: no-repeat !important;
@@ -984,7 +984,7 @@ footer h6{
 }
 .banner-service-cover{
   height: 300px;
-  background: url(../images/service-bg.png);
+  background: url(../images/services.jpg);
   background-position: center !important;
   background-size: 100%  !important;
   background-repeat: no-repeat !important;
@@ -1101,7 +1101,7 @@ footer h6{
 } 
 .banner-contact-cover{
   height: 300px;
-  background: url(../images/contact-bg.png);
+  background: url(../images/contact.jpg);
   background-position: center !important;
   background-size: 100%  !important;
   background-repeat: no-repeat !important;
@@ -1273,7 +1273,21 @@ footer h6{
 }
 .banner-tire-cover{
   height: 300px;
-  background: url(../images/trie-bg.png);
+  background: url(../images/tire.jpg);
+  background-position: center !important;
+  background-size: 100% 300px  !important;
+  background-repeat: no-repeat !important;
+}
+.banner-wheel-cover{
+  height: 300px;
+  background: url(../images/wheels.png);
+  background-position: center !important;
+  background-size: 100% 300px  !important;
+  background-repeat: no-repeat !important;
+}
+.banner-other-cover{
+  height: 300px;
+  background: url(../images/other_product.jpg);
   background-position: center !important;
   background-size: 100% 300px  !important;
   background-repeat: no-repeat !important;
@@ -2658,10 +2672,17 @@ footer h6{
     padding-bottom: 20px;
   }
   .banner-promotion-cover{
-    height: 180px;
-    background: url(../images/promotion-bn-m.png);
+    height: 150px;
+    background: url(../images/promotion.jpg);
     background-position: center !important;
     background-size: auto 100%  !important;
+  }
+  .banner-tips-cover{
+    height: 150px;
+    background: url(../images/tips.jpg);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
   }
   .promotion-page .promotion > img{
     object-fit: cover;
@@ -2805,7 +2826,7 @@ footer h6{
   }
   .banner-service-cover{
     height: 150px;
-    background: url(../images/service-bg.png);
+    background: url(../images/services.jpg);
     background-position: center !important;
     background-size: auto 100%  !important;
     background-repeat: no-repeat !important;
@@ -2881,7 +2902,7 @@ footer h6{
   } 
   .banner-contact-cover{
     height: 150px;
-    background: url(../images/contact-bg-mb.png);
+    background: url(../images/contact.jpg);
     background-position: center !important;
     background-size: auto 100%  !important;
     background-repeat: no-repeat !important;
@@ -2946,11 +2967,25 @@ footer h6{
   }
   .banner-tire-cover{
     height: 150px;
-    background: url(../images/trie-bg-mb.png);
+    background: url(../images/tips.jpg);
     background-position: center !important;
     background-size: auto 150px  !important;
     background-repeat: no-repeat !important;
   } 
+  .banner-other-cover{
+    height: 150px;
+    background: url(../images/other_product.jpg);
+    background-position: top center !important;
+    background-size: auto 150px  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-wheel-cover{
+    height: 150px;
+    background: url(../images/wheels.png);
+    background-position: center !important;
+    background-size: auto 150px   !important;
+    background-repeat: no-repeat !important;
+  }
   .product-main .product .custom-control-label {
     font-size: 12px;
     font-family: Kanit-Light;
