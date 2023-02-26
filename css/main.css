@@ -288,10 +288,10 @@ footer .bot{
 
 }
 #slide1 .carousel-inner .carousel-item img{  
-  height: 700px; 
+  height: 500px; 
 } 
 #slide1 .carousel-inner .carousel-item img{  
-  height: 700px; 
+  height: 500px; 
 }
 .carousel-indicators{ 
   margin-bottom: -60px;
@@ -387,7 +387,7 @@ footer .bot{
   justify-content: center;
   align-items: end;
   padding-bottom: 43px;
-  transform: skew(-15deg);
+  transform: skew(-15deg) scale(.8);
   margin-bottom: 60px;
 }
 .btn-service:after{ 
@@ -3461,3 +3461,29 @@ footer h6{
     background-color: #fff;
   } 
 } 
+
+
+
+@media (min-width: 1600px){
+  .btn-service{  
+    transform: skew(-15deg) scale(1); 
+  }
+  #slide1 .carousel-inner .carousel-item img{  
+    height: 700px; 
+  }
+  .home-tips .tips-box .img { 
+    height: 500px; 
+  }
+}
+@media (min-width: 1200px){
+  .btn-service{  
+    transform: skew(-15deg) scale(.7); 
+  } 
+  #slide1 .carousel-inner .carousel-item img{  
+    height: 450px; 
+  }
+  .home-tips .tips-box .img { 
+    height: 450px; 
+  }
+}
+ 
