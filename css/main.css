@@ -62,7 +62,7 @@ header .dropdown:hover>.dropdown-menu {
   }
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 header nav{ 
   background-color: #F9FBFC;
@@ -135,9 +135,13 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu a{
 header .navbar-nav .nav-item.dropdown .dropdown-menu a:hover{ 
   color: #E16D22; 
 }
+header .navbar-nav .nav-item.dropdown .dropdown-menu a:active{ 
+  background-color: #E16D22;
+  color: #fff;
+}
 header .navbar-nav .btn-login{
   font-family: Kanit-Medium;
-  font-size: 17px;
+  font-size: 14px;
   background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
   border-radius: 15px;
   height: 30px;
@@ -2261,12 +2265,191 @@ footer h6{
 .main-cart .custom-control.custom-checkbox .custom-control-label::before {
   border-radius: 0px;
 }
-
-
-
+.table-compare thead tr th{
+  height: 250px;
+  vertical-align: middle;
+  background: #fff !important; 
+  border: 1px solid #E2E2E2;
+  padding: 16px !important;
+  width: 25%;
+  position: relative;
+} 
+.table-compare .close2{ 
+  position: absolute;
+  right: 25px;
+  top: 25px;
+} 
+.table-compare thead tr th:first-child{ 
+  border: 0px solid #E2E2E2;
+} 
+.table-compare thead tr th .img{
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 30px;
+} 
+.table-compare thead tr th .brand{
+  height: 22px;
+  object-fit: cover;  
+} 
+.table-compare thead tr th .lor{
+  height: 120px;
+  object-fit: cover;  
+} 
+.table-compare thead tr th h5{
+  font-family: Kanit-Regular; 
+  font-size: 24px;
+  color: #000;
+  margin-top: 10px;
+} 
+.table-compare thead tr th h4{
+  font-family: Kanit-Regular; 
+  font-size: 30px;
+  color: #E16D22;
+  margin-bottom: 0px;
+}  
+.table-compare thead tr th h6{
+  font-family: Kanit-Regular; 
+  font-size: 18px;
+  color: #58595A;
+  margin-top: 0px;
+  text-decoration: line-through; 
+}   
+.table-compare .finger img{
+  height: 100px;
+  margin-bottom: 30px;  
+}
+.table-compare .finger{
+  font-family: Kanit-Light; 
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+.table-compare tbody tr td.active{
+  background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+  font-family: Kanit-Regular !important; 
+  font-size: 30px !important;
+  color: #fff !important;
+  text-align: left !important;
+  padding: 5px 10px !important;
+} 
+.table-compare tbody tr:nth-child(even) td{
+  background-color: #F4F4F4;
+}  
+.table-compare tbody tr td{
+  border: 1px solid #E2E2E2;
+}  
+.table-compare tbody tr td:nth-child(1){ 
+  font-family: Kanit-Light; 
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+} 
+.table-compare tbody tr td:nth-child(2){ 
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+  color:#E16D22;
+  vertical-align: middle;
+}
+.table-compare tbody tr td:nth-child(3){ 
+  font-family: Kanit-Regular; 
+  font-size: 20px;
+  color:#E16D22;
+  vertical-align: middle;
+}
+.table-compare tbody tr td img.icon{ 
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  margin-right: 20px;
+} 
+.table-compare tbody tr td img.status{ 
+  width: 27px;
+  height: 27px;
+  object-fit: cover;
+  margin-right: 20px;
+} 
+.body-compare{
+ padding: 40px 80px !important;
+} 
+.product-compare{
+  padding: 20px;
+  border: 1px solid #E2E2E2;
+  text-align: center;
+  margin-top: 30px;
+} 
+.product-compare .img{
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  max-width: 100%;
+}  
+.product-compare .img + img{
+  height: 22px;
+  object-fit: cover;  
+  max-width: 100%;
+}  
+.product-compare h5{
+  font-family: Kanit-Regular; 
+  font-size: 24px;
+  color: #000;
+  margin-top: 10px;
+} 
+.product-compare h4{
+  font-family: Kanit-Regular; 
+  font-size: 30px;
+  color: #E16D22;
+  margin-bottom: 0px;
+}  
+.product-compare h6{
+  font-family: Kanit-Regular; 
+  font-size: 18px;
+  color: #58595A;
+  margin-top: 0px;
+  text-decoration: line-through; 
+}   
+.row-product{
+  height: 600px;
+  overflow-y: auto;
+} 
+.row-product::-webkit-scrollbar {
+  width: 5px;
+}
+.row-product::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 0px;
+} 
+.row-product::-webkit-scrollbar-thumb {
+  background: #E16D22; 
+  border-radius: 0px;
+} 
+.row-product::-webkit-scrollbar-thumb:hover {
+  background: #D74532; 
+}
+.body-compare h3{
+  color: #58595A;
+  font-size: 20px;
+  font-family: Kanit-Regular;
+}
+.body-compare .form-control{
+  float: right;
+  width: 350px;
+  height: 50px;
+  border: 1px solid #E2E2E2;
+  border-radius: 5px;
+  color: #58595A;
+  font-size: 20px;
+  font-family: Kanit-Regular;
+}
+.body-compare .form-control + img{ 
+  width: 18px;
+  height: 18px; 
+  position: absolute;
+  right: 35px;
+  top: 15px;
+}
 
  
-
 
 
 /* 
@@ -3122,6 +3305,69 @@ footer h6{
   }
   .form-cart .pr-0{
     padding-right: 15px !important;
+  }
+  .table-compare thead tr th{ 
+    min-width: 220px;
+  } 
+  .table-compare thead tr th .img {
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .table-compare tbody tr td:nth-child(1) {
+    padding-left: 20px;
+    font-size: 13px;
+  }
+  .table-compare tbody tr td:nth-child(2) { 
+    font-size: 14px;
+  }
+  .table-compare thead tr th .brand{
+    height: 16px;
+    object-fit: cover;  
+  } 
+  .table-compare thead tr th h5 { 
+    font-size: 16px; 
+  }
+  .table-compare thead tr th h4 { 
+    font-size: 24px; 
+  }
+  .table-compare thead tr th h3 { 
+    font-size: 14px; 
+  }
+  .table-compare tbody tr td.active { 
+    font-size: 20px !important; 
+  }
+  .body-compare{
+    padding: 15px 20px !important;
+  }
+  .body-compare h3{
+    text-align: center;
+  } 
+  .body-compare .row .float-right{
+    padding-left: 15px;
+  } 
+  .body-compare .row .form-control{
+    width: 100%;
+  } 
+  .product-compare{
+    padding: 7px;
+  }
+  .product-compare .img{
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  .product-compare .brand{
+    height: 16px;
+    margin-bottom: 10px;
+  }
+  .product-compare h5{
+    font-size: 14px;
+  }
+  .product-compare h4{
+    font-size: 16px;
+  }
+  .product-compare h6{
+    font-size: 14px;
   }
 }
 
