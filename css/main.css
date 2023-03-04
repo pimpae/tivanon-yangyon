@@ -61,6 +61,11 @@ header .dropdown:hover>.dropdown-menu {
     max-width: 1370px !important;
   }
 }
+@media (min-width: 1200px){
+  .container.container3, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1470px !important;
+  }
+}
 html {
   scroll-behavior: smooth; 
 }
@@ -361,7 +366,7 @@ footer .bot{
   line-height: 60px;
   font-family: BebasNeue-Regular;
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 .h1-botb:after{ 
   content: "";
@@ -490,6 +495,11 @@ footer .bot{
 .home-tips .tips-box h4{
   margin-top: 10px;
   margin-bottom: 25px;
+  color: #000000;
+  font-family: Kanit-Regular;
+  font-size: 30px; 
+}
+.home-tips .tips-box h4 > a{ 
   color: #000000;
   font-family: Kanit-Regular;
   font-size: 30px; 
@@ -1315,7 +1325,7 @@ footer h6{
   color: #000000; 
   margin-bottom: 20px;
 }
-.product-main .selectpicker + .btn-light { 
+.selectpicker + .selectpicker + .btn-light { 
   border: 1px solid rgba(88, 89, 90, .25);
   height: 50px;
 }
@@ -1324,7 +1334,7 @@ footer h6{
   background-color: #fff;
   border: 1px solid rgba(88, 89, 90, .25);
 }
-.product-main  .dropdown-toggle::after { 
+.selectpicker +  .dropdown-toggle::after { 
   content: ""; 
   width: 14px;
   height: 14px; 
@@ -1334,7 +1344,7 @@ footer h6{
   background-size: 14px 14px !important;
   background-position:  center center !important;
 }
-.product-main .show .dropdown-toggle::after { 
+.selectpicker + .show .dropdown-toggle::after { 
   transform: rotate(180deg);
 }
 .search-control{
@@ -1517,6 +1527,9 @@ footer h6{
   font-family: Kanit-Medium; 
   font-size: 20px;
 }
+.product-box h4 a{
+  color: #000000;  
+}
 .product-box h5{
   margin-bottom: 10px;
   font-family: Kanit-Medium; 
@@ -1670,7 +1683,7 @@ footer h6{
   font-family: Kanit-Regular;
   margin-top: 20px;
   color: #000;
-  font-size: 30px;
+  font-size: 28px;
 }
 .product-des h6{
   font-family: Kanit-Light; 
