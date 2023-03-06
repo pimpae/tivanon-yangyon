@@ -462,7 +462,7 @@
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="Emai/Phone Number">
 								</div>   
-								<a class="btn btn-submit" href="account.html">แก้ไขข้อมูล</a>
+								<a class="btn btn-submit alert-password" href="javascript:void(0)"  >แก้ไขข้อมูล</a>
 								<div class="col text-center">
 									<span>ยังไม่มีบัญชี?</span><a href="#" class="register-show active"  > สมัครเพื่อใช้งาน</a>
 								</div>
@@ -607,6 +607,10 @@
 			$('#modalPassword').modal('show');
 		}); 
 
+		$('.alert-password').on( "click", function() {
+			$('#modalPassword').modal('hide');
+			$('#modalAlert2').modal('show');
+		}); 
 	 
 
 		$('.btn-menu').click(function(){    
