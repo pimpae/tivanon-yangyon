@@ -63,7 +63,7 @@ header .dropdown:hover>.dropdown-menu {
 }
 @media (min-width: 1200px){
   .container.container3, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1470px !important;
+    max-width: 1350px !important;
   }
 }
 html {
@@ -146,13 +146,13 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu a:active{
 }
 header .navbar-nav .btn-login{
   font-family: Kanit-Medium;
-  font-size: 14px;
+  font-size: 13px;
   background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
   border-radius: 15px;
   height: 30px;
   color: #fff;
   min-width: 73px;
-  line-height: 18px;
+  line-height: 16px;
   margin-top: 10px;
   text-transform: uppercase;
 }
@@ -218,7 +218,7 @@ footer .bot{
   height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
-  padding-top: 120px;
+  padding-top: 90px;
 }
 .search-home > div{
   width: 397px;
@@ -293,11 +293,8 @@ footer .bot{
 
 }
 #slide1 .carousel-inner .carousel-item img{  
-  height: 500px; 
-} 
-#slide1 .carousel-inner .carousel-item img{  
-  height: 500px; 
-}
+  height: calc(100vh - 300px); 
+}  
 .carousel-indicators{ 
   margin-bottom: -60px;
 } 
@@ -1838,6 +1835,13 @@ footer h6{
   text-align: center; 
   vertical-align: middle;
 }
+.product-table .table tbody tr td a{
+  color: #000000;
+  transition: .33s all ease-out; 
+}
+.product-table .table tbody tr td a:hover{
+  color: #e2863c; 
+}
 .product-table .table tbody tr td img{
   object-fit: cover;
   height: 140px;
@@ -2462,7 +2466,27 @@ footer h6{
   top: 15px;
 }
 
- 
+
+.nav-map{
+  margin-bottom: 45px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E2E2E2;
+  color: #000;
+  font-size: 14px;
+  font-family: Kanit-Regular;
+}
+.nav-map a{
+  margin-bottom: 45px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E2E2E2;
+  color: #000;
+  font-size: 14px;
+  font-family: Kanit-Regular;
+  transition: .33s all ease-out; 
+}
+.nav-map a:hover{ 
+  color: #E16D22; 
+} 
 
 
 /* 
@@ -2481,7 +2505,7 @@ footer h6{
   888888888888888888888888888888888888888888888888888888888888888888888888888888
 */
 
-@media only screen and (max-width: 1024px) { /* MOBILE */ 
+@media only screen and (max-width: 767px) { /* MOBILE */ 
   header nav{ 
     background-color: #F9FBFC;
     height: 80px;
@@ -3384,7 +3408,7 @@ footer h6{
   }
 }
 
-@media only screen and (width: 768px) { /* IPAD */ 
+@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */ 
   .promotion-page .promotion > img{ 
     height: 200px;  
   } 
@@ -3477,7 +3501,7 @@ footer h6{
 
 
 
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
   .btn-service{  
     transform: skew(-15deg) scale(.7); 
   } 
@@ -3499,4 +3523,4 @@ footer h6{
   .home-tips .tips-box .img { 
     height: 500px; 
   }
-}
+} */
