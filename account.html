@@ -141,9 +141,17 @@
 						<li class="nav-item">
 							<a href="contact.html" class="nav-link">Contact</a>
 						</li> 
-						<li class="nav-item">
-							<a href="#" class="btn btn-login" data-toggle="modal" data-target="#modalLogin">Login</a>
-						</li> 
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle u-pro" href="#" id="navbarDrop" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+								<img src="images/icon-user.png" alt="">
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDrop">
+								<li><span>สวัสดี!  <b>ปิยะ ไทยพานิช</b></span></li>
+								<li><a class="dropdown-item" href="account.html"><img src="images/acc1.png" alt="">ข้อมูลส่วนตัว</a></li>
+								<li><a class="dropdown-item" href="history.html"><img src="images/acc2.png" alt="">ประวัติการสั่งซื้อ</a></li>
+								<li><a class="dropdown-item" href="index.html"><img src="images/acc3.png" alt="">ออกจากระบบ</a></li>
+							</ul>
+						</li>
 						<li class="nav-item">
 							<a href="order-list.html" class="icon-cart">
 								<img src="images/icon-cart.png" alt="icon-cart">
@@ -344,6 +352,9 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content"> 
 				<div class="modal-body">
+					<button type="button" class="btn closex" data-dismiss="modal">
+						<img src="images/icon-close2.png" alt="">
+					</button>
 					<div class="row justify-content-center">
 						<div class="col-11"><h3>เข้าสู่ระบบ</h3></div>
 						<div class="col-md-5 col-12">
@@ -390,8 +401,11 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content"> 
 				<div class="modal-body">
+					<button type="button" class="btn closex" data-dismiss="modal">
+						<img src="images/icon-close2.png" alt="">
+					</button>
 					<div class="row justify-content-center">
-						<div class="col-11"><h3>เข้าสู่ระบบ</h3></div>
+						<div class="col-11"><h3>สร้างบัญชี</h3></div>
 						<div class="col-md-5 col-12">
 							<a href="#" class="btn btn-social">
 								<img src="images/sc1.png" alt="Facebook"> เข้าสู่ระบบด้วย Facebook
@@ -452,6 +466,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<div class="modal fade alert-modal" id="modalAlert1">
 		<div class="modal-dialog modal-dialog-centered">

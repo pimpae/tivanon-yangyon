@@ -2487,6 +2487,56 @@ footer h6{
 .nav-map a:hover{ 
   color: #E16D22; 
 } 
+.closex{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.u-pro{
+  margin-top: -5px;
+}
+.u-pro::before{
+  content: unset !important;
+} 
+.u-pro + .dropdown-menu{ 
+  width: 270px;
+}
+.u-pro + .dropdown-menu li:nth-child(1){
+  height: 60px;
+  color: #000;
+  font-size: 20px;
+  font-family: Kanit-Medium;
+  line-height: 60px;
+}  
+.u-pro + .dropdown-menu li span{ 
+  padding-left: 34px;
+  font-size: 20px;
+  color: #000;
+  font-family: Kanit-Medium;
+}  
+.u-pro + .dropdown-menu li span b{  
+  font-family: Kanit-Medium !important;
+  font-weight: unset !important;
+  color: #E16D22; 
+  padding-left: 10px;
+} 
+.u-pro + .dropdown-menu li{ 
+  position: relative;
+} 
+.u-pro + .dropdown-menu li a{ 
+  padding-left: 74px;
+  color: #58595A; 
+  font-size: 20px;
+  font-family: Kanit-Medium;
+} 
+.u-pro + .dropdown-menu li a img{ 
+  position: absolute;
+  left: 34px; 
+  top: 20px;
+  width: 20px;
+} 
+
+
 
 
 /* 
