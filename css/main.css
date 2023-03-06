@@ -558,8 +558,7 @@ footer .bot{
 }
 .home-logo img{ 
   display: block;
-  margin: auto;
-  object-fit: cover;
+  margin: auto; 
 }
 footer address{
   font-family: Kanit-Light; 
@@ -2534,7 +2533,21 @@ footer h6{
   top: 20px;
   width: 20px;
 } 
-
+header .navbar-nav .nav-item.lang  .dropdown-menu {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+  margin-top: -1px;
+  margin-left: -27px;
+}
+header .navbar-nav .nav-item.lang .dropdown-menu li {
+  border: 0px solid #E2E2E2;
+  height: 50px;
+}
+header .navbar-nav .nav-item.lang .dropdown-menu li a {
+  height: 50px !important; 
+  line-height: 45px;
+}
 
 
 
@@ -3454,6 +3467,93 @@ footer h6{
   }
   .product-compare h6{
     font-size: 14px;
+  }
+  .alert-modal .modal-body {
+    padding: 30px 20px;
+  } 
+  .alert-modal .modal-body h3 { 
+    font-size: 18px; 
+    margin-top: 25px;
+    line-height: 30px; 
+  }
+  .search-home .link { 
+    font-size: 18px;  
+  }
+  .home-logo .lSAction{
+      display: none !important;
+  }
+  .product-box h4 { 
+    font-size: 18px;
+  }
+  .product-box .price .quantity .sub {
+    color: #000;
+  }
+  .product-box .price .quantity .add {
+    color: #000;
+  }
+  .product-box .price .quantity {
+    margin-bottom: 10px;
+  }
+  .service-icon .icon p { 
+    margin-bottom: 25px; 
+  }
+  .closex {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  .closex{
+    z-index: 1111 !important;
+  }
+  .closex img{
+    height: 15px !important;
+  }
+  .login-modal .modal-body .col-11 { 
+    margin-bottom: 30px; 
+    margin: auto; 
+  }
+  .login-modal .modal-body .btn-social { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body .form-group input { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body form a { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body form span { 
+    font-size: 18px; 
+  }
+  .login-modal{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-dialog{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-content{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-body{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .main-cart .quantity button {
+    color: #000 !important;
+  }
+  .main-cart .quantity .sub {
+    left: 5px;
+  }
+  .main-cart .quantity .add {
+    right: 5px;
+  }
+  .btn-cancle { 
+    font-size: 18px; 
+  }
+  .btn-master { 
+    white-space: nowrap;
   }
 }
 
