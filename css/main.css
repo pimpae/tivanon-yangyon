@@ -2022,8 +2022,7 @@ footer h6{
   padding-left: 0px;
 }
 .table-cart tbody tr td:last-child{  
-  text-align: right;
-  padding-right: 0px;
+  text-align: center; 
 }
 .table-cart tbody tr td:last-child img{  
   height: 17px;
