@@ -543,14 +543,22 @@
 
 		$('.register-show').on( "click", function() {
 			$('#modalLogin').modal('hide');
+			$('#modalPassword').modal('hide');
 			$('#modalRegister').modal('show');
 		}); 
 
 		$('.btn-next').on( "click", function() {
 			$('#modalRegister').modal('hide');
+			$('#modalPassword').modal('hide');
 			$('#modalAlert1').modal('show');
 		}); 
  
+		$('.password-pop').on( "click", function() {
+			$('#modalLogin').modal('hide');
+			$('#modalPassword').modal('show');
+		}); 
+
+	 
 
 		$('.btn-menu').click(function(){    
 			$(".menu-mb").addClass("active" , 300);  

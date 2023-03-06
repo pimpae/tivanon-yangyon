@@ -693,6 +693,23 @@
 
 	<script>
 
+		$('.register-show').on( "click", function() {
+			$('#modalLogin').modal('hide');
+			$('#modalPassword').modal('hide');
+			$('#modalRegister').modal('show');
+		}); 
+
+		$('.btn-next').on( "click", function() {
+			$('#modalRegister').modal('hide');
+			$('#modalPassword').modal('hide');
+			$('#modalAlert1').modal('show');
+		}); 
+ 
+		$('.password-pop').on( "click", function() {
+			$('#modalLogin').modal('hide');
+			$('#modalPassword').modal('show');
+		}); 
+
 		$('.add').click(function () {
 			if ($(this).prev().val() < 3) {
 			$(this).prev().val(+$(this).prev().val() + 1);
@@ -702,18 +719,7 @@
 			if ($(this).next().val() > 1) {
 			if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
 			}
-		});
-
-		$('.register-show').on( "click", function() {
-			$('#modalLogin').modal('hide');
-			$('#modalRegister').modal('show');
 		}); 
-
-		$('.btn-next').on( "click", function() {
-			$('#modalRegister').modal('hide');
-			$('#modalAlert1').modal('show');
-		}); 
-
 
  
 
