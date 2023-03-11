@@ -1652,9 +1652,12 @@ footer h6{
   padding-right: 36px;
   background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
   margin-bottom: 20px;
+  position: relative;
+  padding-left: 60px;
 } 
 .btn-filter img{
-  float: right;
+  position: absolute;
+  left: 15px;
   margin-top: 5px;
 } 
 .product-box .pro-img{
@@ -2565,8 +2568,15 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   888888888888888888888888888888888888888888888888888888888888888888888888888888
   888888888888888888888888888888888888888888888888888888888888888888888888888888
 */
-
+.btn.btn-filter:hover {
+  color: #fff;
+  text-decoration: none;
+}
 @media only screen and (max-width: 767px) { /* MOBILE */  
+  
+  footer .hide{
+    display: none;
+  }
   .menu-mb{ 
     z-index: 2222 !important;
     position: fixed;
@@ -3296,7 +3306,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }  
   .filter-modal .modal-dialog{
     margin: 0px;
-    margin-right: 55px;  
+    margin-left: 55px;  
   }
   .filter-modal .modal-content{ 
     border-radius: 0px;  
@@ -3558,6 +3568,33 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
 }
 /* IPAD START */
 @media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */    
+  .tabl{
+    text-align: right;
+    padding-top: 10px;
+  }
+  .product-main{
+    max-width: 100%;
+  }
+  .menu-mb .d-flex.justify-content-around{
+    max-width: 50%;
+    margin: auto;
+  }
+  .row.row-set .col-2{
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .home-service{ 
+    height: 434px;
+  }
+  .home-service .row-set { 
+    padding: 15px 40px !important;
+  }
+  .fixed-top + main {
+    margin-top: 80px;
+  }
+  .home-sec1{
+    background: unset !important;
+  }
   .menu-mb{ 
     z-index: 2222 !important;
     position: fixed;
@@ -3740,6 +3777,10 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   .home-sec1 {
     min-height: unset !important;
   }
+  .home-sec1 .container{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
   .home-sec1 .container .row > div.col-xl-7:nth-child(1){
     order: 2; 
     background: url(../images/car-img.png),  #fff   !important;
@@ -3749,7 +3790,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
   .home-sec1 .container .row > div.col-xl-5:nth-child(2){
     order: 1;
-    height: 480px;
+    height: 500px;
     background-image: linear-gradient(to bottom, #e2863c, #e07737, #de6834, #db5732, #d74532) !important;
   }
   .home-sec1 .container .row > div:nth-child(2) .carousel{ 
@@ -3787,11 +3828,11 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   } 
   .home-service::before{  
     height: 130px;    
-    bottom: -70px;
+    bottom: -10px;
   } 
   .h1-botb{
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: -10px;
   }
   .h1-botb:after { 
     margin-top: -5px; 
@@ -3800,7 +3841,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     width: 120px;
     height: 220px; 
     padding-bottom: 30px; 
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .home-service .row-set{ 
     flex-wrap: nowrap;
@@ -3818,7 +3859,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     height: 65px; 
   }
   .btn-service h4 { 
-    font-size: 14px; 
+    font-size: 10px; 
   }
   .btn-service img { 
     margin-top: -60px; 
@@ -3827,19 +3868,25 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     margin-top: -75px;
   }
   .home-tips .tips-box .img { 
-    height: 350px; 
+    height: 240px; 
+    width: 240px;
+    object-fit: cover;
+  }
+  .home-tips .tips-box h4 > a { 
+    font-size: 16px;
   }
   .home-tips .tips-box { 
-    text-align: center;
+    text-align: left;
   }
   .home-tips .tips-box h6 {
     margin-top: 15px; 
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
   }
   .home-tips .tips-box h4 {
     font-size: 25px;
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 0px;
   }
   .home-tips .tips-box a {
     font-size: 20px; 
@@ -3865,7 +3912,27 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
   .home-logo img { 
     max-height: 20px;
-    width: 100%;
+    width: 100%; 
+    padding: 0px 5px;
+  }
+  .home-logo .lSAction {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+  } 
+  .home-logo .container{
+    max-width: 100%;
+  }
+  .home-logo .lSAction .lSPrev{
+    background-repeat: no-repeat !important; 
+    left: 0%;
+    background: url(../images/asset1.png);
+  }
+  .home-logo .lSAction .lSNext{
+    background-repeat: no-repeat !important; 
+    right: 0%;
+    background: url(../images/asset2.png);
   }
   .home-logo {
     padding-top: 45px;
@@ -3873,6 +3940,15 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   } 
   .home-logo  .lSPager {
     display: none !important;
+  }
+  footer .hide{
+    display: none;
+  }
+  #home-logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   footer .top {
     background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
@@ -4470,9 +4546,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   .search-home .link { 
     font-size: 18px;  
   }
-  .home-logo .lSAction{
-      display: none !important;
-  }
+    
   .product-box h4 { 
     font-size: 18px;
   }
