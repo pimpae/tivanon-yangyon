@@ -3567,7 +3567,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
 }
 /* IPAD START */
-@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */    
+@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */     
   .tabl{
     text-align: right;
     padding-top: 10px;
@@ -3778,8 +3778,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     min-height: unset !important;
   }
   .home-sec1 .container{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    max-width: 100%;
   }
   .home-sec1 .container .row > div.col-xl-7:nth-child(1){
     order: 2; 
@@ -4063,22 +4062,15 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   .login-modal .modal-body .orx p{  
     top: 5px; 
     left: calc(50% - 30px); 
-  }
-  .login-modal .modal-dialog{
-    margin: 0px;
-    height: 100vh !important; 
-  }
+  } 
   .login-modal .modal-content{ 
-    border-radius: 0px;
-  }
-  .login-modal .modal-body{ 
-    height: 100vh !important; 
+    border-radius: 30px;
   } 
   .banner-account{
     height: 150px;
     background: url(../images/acc-title-mb.png);
     background-position: center !important;
-    background-size: auto 100%  !important;
+    background-size:  100% auto !important;
     background-repeat: no-repeat !important;
   } 
   .banner-account .h1-botb:after {
@@ -4206,7 +4198,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     padding-right: 50px;
   }
   .service-data .img.right:after { 
-    bottom: 0;
+    top: 168px;
     background-color: rgba(255, 255, 255, .8);
     right: 65px;
   }
@@ -4218,8 +4210,8 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     height: 30px; 
   }
   .service-text.right .icon-img{
-    top: -100px;
-    left: calc(100% - 65px);
+    top: 117px;
+    left: calc(0% - 65px);
   }
   .service-text h3 {
     font-size: 30px; 
@@ -4233,16 +4225,13 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
   .service-text p {
     font-size: 16px;  
-  } 
-  .service-data .service-text.left{
-    order: 2;
-  }
+  }  
   .service-data .img.left img{ 
     padding-left: 50px;
   }
   .service-text.left .icon-img{
-    top: -167px;
-    right: calc(100% - 65px);
+    top: 50px;
+    left: calc(100% - -15px);
   }
   .service-data .img.left:after { 
     bottom: 0;
@@ -4264,7 +4253,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     height: 150px;
     background: url(../images/aboutus-bg-mb.png);
     background-position: center !important;
-    background-size: auto 100%  !important; 
+    background-size:  100% auto  !important; 
   }
   .about-us-page .container .row .col-md-6:nth-child(1){
     order: 2 !important;
@@ -4588,23 +4577,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
   .login-modal .modal-body form span { 
     font-size: 18px; 
-  }
-  .login-modal{
-    height: 100% !important;
-    overflow: auto !important;
-  }
-  .login-modal .modal-dialog{
-    height: 100% !important;
-    overflow: auto !important;
-  }
-  .login-modal .modal-content{
-    height: 100% !important;
-    overflow: auto !important;
-  }
-  .login-modal .modal-body{
-    height: 100% !important;
-    overflow: auto !important;
-  }
+  } 
   .main-cart .quantity button {
     color: #000 !important;
   }
@@ -4620,6 +4593,101 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   .btn-master { 
     white-space: nowrap;
   }
+  .promotion-modal h4 {
+    font-size: 20px; 
+    margin-bottom: 15px;
+  }   
+  .promotion-modal p { 
+    font-size: 16px; 
+  }
+  .promotion-modal .modal-dialog {
+    max-width: 90%;
+  }
+  .about-us-page .container .row .col-md-6:nth-child(1) {
+    order: 1 !important; 
+  }
+  .about-us-page h2 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .about-us-text h2 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .about-us-page p { 
+    font-size: 12px;
+  }
+  .about-us-text p { 
+    font-size: 12px;
+  }
+  .login-modal .modal-dialog {
+    max-width: 578px;
+  }
+  .login-modal .modal-dialog .col-md-5{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .btn-menu-account{
+    display: none;
+  }
+  .account ul {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  .account ul li{ 
+    margin-bottom: 0px;
+  }
+  .account ul li a img {
+    position: absolute;
+    width: auto;
+    left: 0;
+    top: 3px;
+    height: 20px;
+  } 
+  .account .bor {
+    border-right: 0px solid #E2E2E2;
+    max-width: 577px;
+    display: block;
+    margin: auto;
+  }
+  .account h4.hr {
+    max-width: 577px;
+    display: block;
+    margin: 0px auto 30px;
+  }
+  .form-right input { 
+    width: 378px;
+    display: block;
+    margin: 15px auto 0px;
+  }
+  .form-right .table-responsive{
+    max-width: 577px;
+    display: block;
+    margin: 0px auto;
+
+  }
+  .form-cart .sum { 
+    margin-left: unset !important; 
+    max-width: 100%;   
+  }
+  .form-cart input.form-control { 
+    max-width: 100%; 
+  }
+  .form-cart textarea.form-control.mark{
+    max-width: 100%;  
+  }
+  .form-cart textarea.form-control.address{
+    max-width: 100%;   
+  }
+  .main-cart .custom-control .custom-control-label img { 
+    display: block;
+  }
+  .step-cart .box-step:after {
+    width: calc(100% - 222px); 
+  } 
 }
 
 
@@ -4675,12 +4743,15 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
     height: 150px;
     background: url(../images/acc-title-mb.png);
     background-position: center !important;
-    background-size: auto 100%  !important;
+    background-size:  100% auto  !important;
     background-repeat: no-repeat !important;
   } 
   .banner-account .h1-botb:after {
     margin-top: 0px;
     background-color: #fff;
+  } 
+  .banner-account + .container{
+    max-width: 100%;
   } 
 } 
 
