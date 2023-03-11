@@ -2550,7 +2550,6 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
 }
 
 
-
 /* 
   transition: .33s all ease-out; 
   #E16D22
@@ -2567,58 +2566,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   888888888888888888888888888888888888888888888888888888888888888888888888888888
 */
 
-@media only screen and (max-width: 767px) { /* MOBILE */ 
-  header nav{ 
-    background-color: #F9FBFC;
-    height: 80px;
-    padding: 20px !important;
-  } 
-  header .navbar-brand img{
-    height: 35px;
-  }
-  header .navbar .navbar-toggler{
-    float: right;
-    position: absolute;
-    right: 20px;
-  } 
-  header .dropdown-toggle::after{
-    content: unset !important;
-  }
-  header .dropdown-toggle:before{
-    content: "";
-    position: absolute;
-    right: 0;
-    height: 5px;
-    width: 12px;
-    border-radius: 100%;
-    background: url(../images/ionic-ios-arrow-down-mi.png);
-    background-position: center !important;
-    background-size: 11px 5px !important;
-    background-repeat: no-repeat !important; 
-    top: 22px;
-    right: -5px;
-  } 
-  header .show .dropdown-toggle:before{
-    transform: rotate(180deg);
-  }
-  header button:focus {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-  header button:active {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-  header .lang{
-    float: right;
-    position: absolute;
-    right: 90px;  
-  }
-  header .lang > a{ 
-    font-family: Kanit-Medium; 
-    color: #58595A;
-    font-size: 20px;
-  } 
+@media only screen and (max-width: 767px) { /* MOBILE */  
   .menu-mb{ 
     z-index: 2222 !important;
     position: fixed;
@@ -2714,6 +2662,1049 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
   .menu-mb .navbar-nav .dropdown.active span:before{
     transform: rotate(180deg);
+  } 
+
+  header nav{ 
+    background-color: #F9FBFC;
+    height: 80px;
+    padding: 20px !important;
+  } 
+  header .navbar-brand img{
+    height: 35px;
+  }
+  header .navbar .navbar-toggler{
+    float: right;
+    position: absolute;
+    right: 20px;
+  } 
+  header .dropdown-toggle::after{
+    content: unset !important;
+  }
+  header .dropdown-toggle:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 5px;
+    width: 12px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-down-mi.png);
+    background-position: center !important;
+    background-size: 11px 5px !important;
+    background-repeat: no-repeat !important; 
+    top: 22px;
+    right: -5px;
+  } 
+  header .show .dropdown-toggle:before{
+    transform: rotate(180deg);
+  }
+  header button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header .lang{
+    float: right;
+    position: absolute;
+    right: 90px;  
+  }
+  header .lang > a{ 
+    font-family: Kanit-Medium; 
+    color: #58595A;
+    font-size: 20px;
+  } 
+  .menu-footer{
+    z-index: 1000 !important;
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background:  linear-gradient(to bottom, #58595a, #454647, #343434, #232323, #121212); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu-footer > a{
+    position: relative;
+  }
+  .menu-footer > a > img{
+    height: 26px;
+  }
+  .menu-footer p{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    height: 18px;
+    width: 18px; 
+    background: transparent linear-gradient(180deg, #E2863C 0%, #D74532 100%) 0% 0% no-repeat padding-box;
+    border-radius: 100%;
+    font-family: Kanit-Medium;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 18px;
+  }
+  .home-sec1 {
+    min-height: unset !important;
+  }
+  .home-sec1 .container .row > div.col-xl-7:nth-child(1){
+    order: 2; 
+    background: url(../images/car-img.png),  #fff   !important;
+    background-position:   center bottom  , center !important;
+    background-size:   100% auto ,  100% !important;
+    background-repeat:  no-repeat , no-repeat !important;    
+  }
+  .home-sec1 .container .row > div.col-xl-5:nth-child(2){
+    order: 1;
+    height: 480px;
+    background-image: linear-gradient(to bottom, #e2863c, #e07737, #de6834, #db5732, #d74532) !important;
+  }
+  .home-sec1 .container .row > div:nth-child(2) .carousel{ 
+  } 
+  #slide1 .carousel-inner .carousel-item img {
+    height: 380px;
+  }
+  #slide1 {
+    margin-top: 25px;
+  } 
+  .search-home{
+    padding-top: 30px; 
+    height: unset !important;
+    padding-bottom: 150px;
+  }
+  .search-home h1 { 
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .custom-control-label { 
+    font-size: 18px; 
+  }
+  .home-service{ 
+    background:  url(../images/img-bg-overlay.png);
+    background-position:   center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: unset !important;
+  }  
+  .home-service:after{  
+    height: 130px;   
+  } 
+  .home-service::before{  
+    height: 130px;    
+    bottom: -70px;
+  } 
+  .h1-botb{
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .h1-botb:after { 
+    margin-top: -5px; 
+  }
+  .btn-service { 
+    width: 120px;
+    height: 220px; 
+    padding-bottom: 30px; 
+    margin-bottom: 20px;
+  }
+  .home-service .row-set{ 
+    flex-wrap: nowrap;
+    overflow-x: auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+  .home-service .row-set > div{ 
+    width: 170px;
+    max-width: unset !important;
+  }
+  .btn-service img {
+    height: 65px; 
+  }
+  .btn-service h4 { 
+    font-size: 14px; 
+  }
+  .btn-service img { 
+    margin-top: -60px; 
+  } 
+  .btn-service:hover img{  
+    margin-top: -75px;
+  }
+  .home-tips .tips-box .img { 
+    height: 350px; 
+  }
+  .home-tips .tips-box { 
+    text-align: center;
+  }
+  .home-tips .tips-box h6 {
+    margin-top: 15px; 
+    text-align: center;
+  }
+  .home-tips .tips-box h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .home-tips .tips-box a {
+    font-size: 20px; 
+  }
+  .home-tips .lSAction {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+  } 
+  .home-tips .lSAction .lSPrev{ 
+    left: 5%; 
+  }
+  .home-tips .lSAction .lSNext{ 
+    right: 0%; 
+  }
+  .btn-master {
+    padding: 10px 30px; 
+    font-size: 18px; 
+  }
+  .home-tips { 
+    padding-bottom: 40px;
+  }
+  .home-logo img { 
+    max-height: 20px;
+    width: 100%;
+  }
+  .home-logo {
+    padding-top: 45px;
+    padding-bottom: 45px; 
+  } 
+  .home-logo  .lSPager {
+    display: none !important;
+  }
+  footer .top {
+    background: transparent linear-gradient(180deg, #58595A 0%, #121212 100%) 0% 0% no-repeat padding-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  footer address {
+    text-align: center;
+  } 
+  footer address img{
+    position: relative;
+    top: 0px;
+  } 
+  footer address { 
+    font-size: 18px; 
+  }
+  footer .top .col-xl-4 ul li{  
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  footer .top .col-xl-4 ul.hide li{ 
+    display: none; 
+  } 
+  footer .top .col-xl-4 ul.show { 
+    display: block;
+  }
+  footer .top .col-xl-4 ul.hide li:first-child { 
+    display: block !important;
+    border-bottom: 1px solid #fff; 
+  }
+  footer .top .col-xl-4 ul.hide li:first-child { 
+    display: block !important;
+    border-bottom: 1px solid #fff; 
+  }
+  footer .top .col-xl-4:first-child ul li:first-child {  
+    border-top: 1px solid #fff; 
+    padding-top: 20px;
+  } 
+  footer .top .col-xl-4 ul.hide li:first-child {   
+    position: relative;
+  } 
+  footer .top .col-xl-4 ul.hide li:first-child:before{
+    content: "";
+    position: absolute; 
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png);
+    background-position: center !important;
+    background-size: 14px auto !important;
+    background-repeat: no-repeat !important; 
+    top: 30px;
+    right: 20px;
+  }
+  footer .bot {
+    height: unset !important;
+    padding-bottom: 80px; 
+    padding-top: 30px;
+  }
+  footer .bot .d-flex{ 
+    display: block !important;
+    text-align: center;
+  }
+  footer h1 { 
+    padding-right: 0px;
+    line-height: 45px; 
+  }
+  .promotion-page{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .banner-promotion-cover{
+    height: 150px;
+    background: url(../images/promotion.jpg);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+  }
+  .banner-tips-cover{
+    height: 150px;
+    background: url(../images/tips.jpg);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .promotion-page .promotion > img{
+    object-fit: cover;
+    height: 378px; 
+    margin-bottom: 20px !important;
+  } 
+  footer h1:after {
+    content: unset; 
+  } 
+  .promotion-modal .modal-body{
+    padding: 20px;
+  } 
+  .login-modal .modal-body{ 
+    padding: 20px;
+  }
+  .login-modal .modal-body .orx{ 
+    height: 60px;
+  }
+  .login-modal .modal-body .orx::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%; 
+    left: 0;
+    top: 50%;
+    background-color: #E2E2E2;
+    z-index: 1;
+  }
+  .login-modal .modal-body .orx p{  
+    top: 5px; 
+    left: calc(50% - 30px); 
+  }
+  .login-modal .modal-dialog{
+    margin: 0px;
+    height: 100vh !important; 
+  }
+  .login-modal .modal-content{ 
+    border-radius: 0px;
+  }
+  .login-modal .modal-body{ 
+    height: 100vh !important; 
+  } 
+  .banner-account{
+    height: 150px;
+    background: url(../images/acc-title-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-account .h1-botb:after {
+    margin-top: 0px;
+    background-color: #fff;
+  }
+  .account{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .account h4 {
+    text-align: center;
+  }
+  .form-right {
+    padding-left: 15px;
+  }
+  .form-right input{
+    margin-bottom: 15px
+  }
+  .col-mb{
+    text-align: center; 
+  }
+  .btn-menu-account{ 
+    font-size: 20px;
+    color: #000;
+    font-family: Kanit-Medium; 
+    border: 1px solid #58595A25;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 40px;
+    position: relative;
+  }
+  .btn-menu-account::after{
+    content: unset;
+  }
+  .btn-menu-account::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    top: 10px;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png) !important;
+    background-position: center !important;
+    background-size: 14px  !important;
+    background-repeat: no-repeat !important;  ;
+  }
+  .btn-menu-account img{
+    height: 20px; 
+    position: absolute;
+    left: 10px;
+    top: 13px;
+  }
+  .btn-menu-account + .dropdown-menu{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item{
+    border-bottom: 1px solid #70707010;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    font-family: Kanit-Medium; 
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item img{
+    position: absolute;
+    width: 18px;
+    left: 10px;
+    top: 20px;
+  }
+  .btn-menu-account + .dropdown-menu .dropdown-item:last-child{
+    border-bottom: 0px solid #70707010; 
+  } 
+  .account table tr th{ 
+    font-size: 14px;
+  }
+  .account table tr td{ 
+    font-size: 12px; 
+  } 
+  .account table tr td:first-child{  
+    padding-left: 0px;
+  } 
+  .account table tr td:last-child{  
+    padding-right: 0px;
+  }
+  .account table tr td:last-child img{  
+    height: 8px;
+  }
+  .banner-service-cover{
+    height: 150px;
+    background: url(../images/services.jpg);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .service-icon {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .service-data { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .service-icon .icon img { 
+    height: 85px;
+  }
+  .service-data .img img {
+    height: 217px;
+    object-fit: cover;
+  }
+  .service-text.right {
+    padding-left: 15px;
+  }
+  .service-data .img:after { 
+    width: 50px;
+    height: 50px; 
+  }
+  .service-data .img.right img{ 
+    padding-right: 50px;
+  }
+  .service-data .img.right:after { 
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    right: 65px;
+  }
+  .service-text .icon-img {
+    height: 50px;
+    width: 50px; 
+  }
+  .service-text .icon-img img{
+    height: 30px; 
+  }
+  .service-text.right .icon-img{
+    top: -100px;
+    left: calc(100% - 65px);
+  }
+  .service-text h3 {
+    font-size: 30px; 
+    margin-top: 20px;
+  }
+  .service-text h4 {
+    font-size: 20px;  
+  }
+  .service-text ul li {
+    font-size: 16px;  
+  }
+  .service-text p {
+    font-size: 16px;  
+  } 
+  .service-data .service-text.left{
+    order: 2;
+  }
+  .service-data .img.left img{ 
+    padding-left: 50px;
+  }
+  .service-text.left .icon-img{
+    top: -167px;
+    right: calc(100% - 65px);
+  }
+  .service-data .img.left:after { 
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    left: 65px;
+  } 
+  .banner-contact-cover{
+    height: 150px;
+    background: url(../images/contact.jpg);
+    background-position: center !important;
+    background-size: auto 100%  !important;
+    background-repeat: no-repeat !important;
+  }
+  .contact-text .contact-img {
+    height: 241px;
+    object-fit: cover;
+  }
+  .banner-about-us-cover{
+    height: 150px;
+    background: url(../images/aboutus-bg-mb.png);
+    background-position: center !important;
+    background-size: auto 100%  !important; 
+  }
+  .about-us-page .container .row .col-md-6:nth-child(1){
+    order: 2 !important;
+    display: block;
+  }
+  .about-us-page .container .row .col-md-6:nth-child(2){
+    order: 1 !important;
+    display: block;
+  }
+  .about-us-page {
+    margin-top: 0px;
+    background: url(../images/bg-orange2.png);
+    background-position: top right !important;
+    background-size: auto 280px !important;
+    background-repeat: no-repeat !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-us-page h2{
+    font-size: 30px;
+    margin-top: 70px;
+  }
+  .about-us-page p{ 
+    font-family: Kanit-Light;
+    font-size: 16px;
+  }
+  .about-us-text .flexx {
+    min-height: unset;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .about-us-text{
+    min-height: unset;
+    padding-bottom: 60px;
+    background: #fff;
+    background-position: top left !important;
+    background-size: 800px auto  !important;
+    background-repeat: no-repeat !important;
+    margin-top: 0px;
+  } 
+  .about-us-text h2{
+    font-size: 30px; 
+    margin-top: 50px;
+  }
+  .about-us-text p{ 
+    font-family: Kanit-Light;
+    font-size: 16px;
+  }
+  .banner-tire-cover{
+    height: 150px;
+    background: url(../images/tips.jpg);
+    background-position: center !important;
+    background-size: auto 150px  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-other-cover{
+    height: 150px;
+    background: url(../images/other_product.jpg);
+    background-position: top center !important;
+    background-size: auto 150px  !important;
+    background-repeat: no-repeat !important;
+  } 
+  .banner-wheel-cover{
+    height: 150px;
+    background: url(../images/wheels.png);
+    background-position: center !important;
+    background-size: auto 150px   !important;
+    background-repeat: no-repeat !important;
+  }
+  .product-main .product .custom-control-label {
+    font-size: 12px;
+    font-family: Kanit-Light;
+  }
+  .product-main .product h6 {
+    font-size: 12px;
+    font-family: Kanit-Light;
+  }
+  .product-main .product hr { 
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .product-box {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    text-align: center;
+  }
+  .product-box .pro-img{
+    height: 251px;
+    object-fit: cover;
+    margin-bottom: 24px;
+  }
+  .product-box .option {
+    display: flex;
+    justify-content: center;
+  }  
+  .filter-modal .modal-dialog{
+    margin: 0px;
+    margin-right: 55px;  
+  }
+  .filter-modal .modal-content{ 
+    border-radius: 0px;  
+  }
+  .filter-modal .modal-body{ 
+    height: 100% !important; 
+  }   
+  .filter-modal  .product-main .filter{
+    display: block;
+  }
+  .filter-modal .product-main .filter {
+    width: 100%;
+  }
+  .product-main {
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }  
+  .product-des .photo img{
+    height: 251px;
+    object-fit: cover; 
+    margin-bottom: 20px;
+  }
+  .product-des .brand{
+    height: 31px;
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+  }
+  .product-des h4{ 
+    font-size: 20px;
+    text-align: center;
+  }
+  .product-des h6{ 
+    text-align: center;
+  }
+  .product-des h5{ 
+    text-align: center;
+  }
+  .product-des .option{ 
+    justify-content: center;
+  }
+  .product-des .btn-bg{
+    margin: auto;
+    margin-top: 10px;
+  }
+  .product-des .position-relative{
+    text-align: center;
+  }
+  .product-des .table{
+    margin-top: 20px;
+  } 
+  .product-des{
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .product-table h4{ 
+    font-size: 20px; 
+  }
+  .product-table .table thead tr th{ 
+    font-size: 14px; 
+  }
+  .product-table .table tbody tr td{ 
+    font-size: 12px; 
+  }
+  
+  .filter-modal.wheel .modal-dialog{ 
+    height: 100%;
+  }
+  .filter-modal.wheel .modal-content{  
+    height: 100%;
+  }
+  .product-table .table tbody tr td img{
+    object-fit: cover;
+    height: 40px;
+    max-width: 100%;
+  }
+  .step-cart { 
+    padding: 20px 0px 25px; 
+  }
+  .step-cart .box-step .step div{
+    height: 50px;
+    width: 50px; 
+    font-size: 30px; 
+    line-height: 55px;
+  }
+  .step-cart .box-step .step h3 {
+    font-family: Kanit-Regular;
+    font-size: 12px; 
+  }
+  .step-cart .box-step:after { 
+    width: calc(100% - 158px);
+    height: 5px;
+    top: 25px; 
+  }
+  .h5-cart{
+    text-align: left;
+  }
+  .borbot{
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .form-cart .pl-0{
+    padding-left: 15px !important;
+  }
+  .form-cart .pr-0{
+    padding-right: 15px !important;
+  }
+  .table-compare thead tr th{ 
+    min-width: 220px;
+  } 
+  .table-compare thead tr th .img {
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .table-compare tbody tr td:nth-child(1) {
+    padding-left: 20px;
+    font-size: 13px;
+  }
+  .table-compare tbody tr td:nth-child(2) { 
+    font-size: 14px;
+  }
+  .table-compare thead tr th .brand{
+    height: 16px;
+    object-fit: cover;  
+  } 
+  .table-compare thead tr th h5 { 
+    font-size: 16px; 
+  }
+  .table-compare thead tr th h4 { 
+    font-size: 24px; 
+  }
+  .table-compare thead tr th h3 { 
+    font-size: 14px; 
+  }
+  .table-compare tbody tr td.active { 
+    font-size: 20px !important; 
+  }
+  .body-compare{
+    padding: 15px 20px !important;
+  }
+  .body-compare h3{
+    text-align: center;
+  } 
+  .body-compare .row .float-right{
+    padding-left: 15px;
+  } 
+  .body-compare .row .form-control{
+    width: 100%;
+  } 
+  .product-compare{
+    padding: 7px;
+  }
+  .product-compare .img{
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  .product-compare .brand{
+    height: 16px;
+    margin-bottom: 10px;
+  }
+  .product-compare h5{
+    font-size: 14px;
+  }
+  .product-compare h4{
+    font-size: 16px;
+  }
+  .product-compare h6{
+    font-size: 14px;
+  }
+  .alert-modal .modal-body {
+    padding: 30px 20px;
+  } 
+  .alert-modal .modal-body h3 { 
+    font-size: 18px; 
+    margin-top: 25px;
+    line-height: 30px; 
+  }
+  .search-home .link { 
+    font-size: 18px;  
+  }
+  .home-logo .lSAction{
+      display: none !important;
+  }
+  .product-box h4 { 
+    font-size: 18px;
+  }
+  .product-box .price .quantity .sub {
+    color: #000;
+  }
+  .product-box .price .quantity .add {
+    color: #000;
+  }
+  .product-box .price .quantity {
+    margin-bottom: 10px;
+  }
+  .service-icon .icon p { 
+    margin-bottom: 25px; 
+  }
+  .closex {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  .closex{
+    z-index: 1111 !important;
+  }
+  .closex img{
+    height: 15px !important;
+  }
+  .login-modal .modal-body .col-11 { 
+    margin-bottom: 30px; 
+    margin: auto; 
+  }
+  .login-modal .modal-body .btn-social { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body .form-group input { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body form a { 
+    font-size: 18px; 
+  }
+  .login-modal .modal-body form span { 
+    font-size: 18px; 
+  }
+  .login-modal{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-dialog{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-content{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .login-modal .modal-body{
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .main-cart .quantity button {
+    color: #000 !important;
+  }
+  .main-cart .quantity .sub {
+    left: 5px;
+  }
+  .main-cart .quantity .add {
+    right: 5px;
+  }
+  .btn-cancle { 
+    font-size: 18px; 
+  }
+  .btn-master { 
+    white-space: nowrap;
+  }
+}
+/* IPAD START */
+@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */    
+  .menu-mb{ 
+    z-index: 2222 !important;
+    position: fixed;
+    left: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/mbg.png) , linear-gradient(to bottom, #58595a, #454647, #343434, #232323, #121212);
+    background-repeat: no-repeat , no-repeat !important;
+    background-size: 285px auto , 100% !important ;
+    background-position: bottom 25px right 25px , center;
+    padding: 25px;
+  }
+  .menu-mb.active{
+    display: block; 
+    left: 0;
+  }
+  .menu-mb .navbar-close{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .menu-mb .lang{
+    position: absolute;
+    right: 70px;
+    top: 20px; 
+  } 
+  .menu-mb .lang > a{ 
+    font-family: Kanit-Medium; 
+    color: #fff;
+    font-size: 20px;
+  } 
+  .menu-mb .navbar-nav{
+    margin-top: 50px;
+  }
+  .menu-mb .navbar-nav { 
+    text-align: center; 
+  }
+  .menu-mb .navbar-nav a{
+    font-family: Kanit-Medium; 
+    color: #fff;
+    text-align: center;
+    font-size: 22px; 
+    text-transform: uppercase;
+  }
+  .menu-mb .navbar-nav li{
+    font-family: Kanit-Medium; 
+    color: #fff;
+    text-align: center;
+    font-size: 22px; 
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .menu-mb .navbar-nav li ul{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .menu-mb .navbar-nav li ul li a{
+    font-family: Kanit-Regular;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .menu-mb .navbar-nav .dropdown ul{
+    display: none;
+  }
+  .menu-mb .navbar-nav .dropdown.active ul{
+    display: block;
+  } 
+  .menu-mb .navbar-nav .dropdown span{
+    position: relative;
+  }
+  .menu-mb .navbar-nav .dropdown span::after{
+    content: unset !important;
+  }
+  .menu-mb .navbar-nav .dropdown span:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-dropdown-circle.png);
+    background-position: center !important;
+    background-size: 14px auto !important;
+    background-repeat: no-repeat !important; 
+    top: 10px; 
+    right: -30px;
+  }
+  .menu-mb .navbar-nav .dropdown.active span:before{
+    transform: rotate(180deg);
+  } 
+
+  header nav{ 
+    background-color: #F9FBFC;
+    height: 80px;
+    padding: 20px !important;
+  } 
+  header .navbar-brand img{
+    height: 35px;
+  }
+  header .navbar .navbar-toggler{
+    float: right;
+    position: absolute;
+    right: 20px;
+  } 
+  header .dropdown-toggle::after{
+    content: unset !important;
+  }
+  header .dropdown-toggle:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 5px;
+    width: 12px;
+    border-radius: 100%;
+    background: url(../images/ionic-ios-arrow-down-mi.png);
+    background-position: center !important;
+    background-size: 11px 5px !important;
+    background-repeat: no-repeat !important; 
+    top: 22px;
+    right: -5px;
+  } 
+  header .show .dropdown-toggle:before{
+    transform: rotate(180deg);
+  }
+  header button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  header .lang{
+    float: right;
+    position: absolute;
+    right: 90px;  
+  }
+  header .lang > a{ 
+    font-family: Kanit-Medium; 
+    color: #58595A;
+    font-size: 20px;
   } 
   .menu-footer{
     z-index: 1000 !important;
@@ -3557,36 +4548,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */ 
-  .promotion-page .promotion > img{ 
-    height: 200px;  
-  } 
-  .banner-promotion-cover{
-    height: 180px;
-    background: url(../images/promotion-bn.png);
-    background-position: center !important;
-    background-size: auto 100%  !important;
-    background-repeat: no-repeat !important;
-  }
-  .promotion-page .promotion h4 { 
-    font-size: 24px; 
-    margin-bottom: 15px;
-  }
-  .promotion-modal .modal-body{
-    padding: 20px;
-  }
-  .banner-account{
-    height: 150px;
-    background: url(../images/acc-title-mb.png);
-    background-position: center !important;
-    background-size: auto 100%  !important;
-    background-repeat: no-repeat !important;
-  } 
-  .banner-account .h1-botb:after {
-    margin-top: 0px;
-    background-color: #fff;
-  }
-}
+
 @media only screen and (width: 1024px) { /* MOBILE */ 
   .promotion-page .promotion > img{ 
     height: 300px;  
@@ -3648,6 +4610,11 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   } 
 } 
 
+@media only screen and (min-width: 992px) { /* WEB_PC */
+  .menu-mb {
+    display: none !important;
+  }
+}
 
 
 /* @media (min-width: 1200px){
