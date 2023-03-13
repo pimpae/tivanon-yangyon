@@ -2572,6 +2572,14 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   color: #fff;
   text-decoration: none;
 }
+
+@media (min-width: 576px){ 
+.container, .container-sm {
+    max-width: 100% !important;
+}
+}
+
+
 @media only screen and (max-width: 767px) { /* MOBILE */  
   
   footer .hide{
@@ -3567,7 +3575,7 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
   }
 }
 /* IPAD START */
-@media only screen and (min-width: 768px) and (max-width: 991px) { /* IPAD */     
+@media only screen and (min-width: 768px) and (max-width: 1024px) { /* IPAD */     
   .tabl{
     text-align: right;
     padding-top: 10px;
