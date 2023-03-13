@@ -2574,9 +2574,9 @@ header .navbar-nav .nav-item.lang .dropdown-menu li a {
 }
 
 @media (min-width: 576px){ 
-.container, .container-sm {
+  .container, .container-sm {
     max-width: 100% !important;
-}
+  }
 }
 
 
